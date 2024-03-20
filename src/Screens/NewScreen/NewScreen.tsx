@@ -17,11 +17,11 @@ function NewScreen(props): React.JSX.Element {
   const styles = stylesFn(colors);
   const appState = useAppState();
 
-  console.log(`=AAA= NewScreen.tsx ${appState} ${Math.random()}`);
-
   React.useEffect(() => {
     console.log('=AAA= NewScreen.tsx []');
   }, []);
+
+  console.log(`=AAA= NewScreen.tsx ${appState} ${Math.random()}`);
 
   return (
     <>
@@ -39,7 +39,10 @@ function NewScreen(props): React.JSX.Element {
             <Typography>NewScreen.tsx, {newProp}</Typography>
             <Typography>___</Typography>
 
-            <Pressable onPress={() => navigation.navigate('Home')}>
+            <Pressable
+              onPress={() =>
+                navigation.navigate('NestedStack', {screen: 'Home'})
+              }>
               <Typography>{appState}</Typography>
             </Pressable>
           </View>

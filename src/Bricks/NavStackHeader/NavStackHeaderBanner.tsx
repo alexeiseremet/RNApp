@@ -6,9 +6,9 @@ import * as React from 'react';
 import {Alert, Animated} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import stylesFn from './RootStackScreen.styles';
+import stylesFn from './NavStackHeader.styles';
 
-function RootStackScreenBanner(props) {
+function NavStackHeaderBanner(props) {
   const {current, next} = props.progress;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
@@ -28,10 +28,10 @@ function RootStackScreenBanner(props) {
   return (
     <Animated.Text
       onPress={onPress}
-      style={[styles.RootStackScreenBanner, {opacity}]}>
+      style={[styles.NavStackHeaderBanner, {opacity}]}>
       About credex
     </Animated.Text>
   );
 }
 
-export default React.memo(RootStackScreenBanner);
+export default React.memo(NavStackHeaderBanner);

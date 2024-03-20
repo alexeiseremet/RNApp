@@ -14,12 +14,11 @@ function ModalScreen(props): React.JSX.Element {
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
 
-  console.log(`=AAA= ModalScreen.tsx ${Math.random()}`);
-  console.log('=AAA= ModalScreen.tsx parent');
-
   React.useEffect(() => {
     console.log('=AAA= ModalScreen.tsx []');
   }, []);
+
+  console.log(`=AAA= ModalScreen.tsx ${Math.random()}`);
 
   return (
     <>

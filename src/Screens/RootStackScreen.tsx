@@ -5,12 +5,12 @@
 import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import NewScreen from '../NewScreen/NewScreen';
-import HomeScreen from '../HomeScreen/HomeScreen';
-import ModalScreen from '../ModalScreen/ModalScreen';
-import Typography from '../../Bricks/Typography/Typography';
-import RootStackScreenHeader from './RootStackScreenHeader';
-import RootStackScreenBackground from './RootStackScreenBackground';
+import NewScreen from './NewScreen/NewScreen';
+import ModalScreen from './ModalScreen/ModalScreen';
+import Typography from '../Bricks/Typography/Typography';
+import RootStackScreenHeader from '../Bricks/NavStackHeader/NavStackHeader';
+import RootStackScreenBackground from '../Bricks/NavStackHeader/NavStackHeaderBackground';
+import NestedStackScreen from './NestedStackScreen';
 
 const RootStack = createStackNavigator();
 
@@ -29,11 +29,11 @@ const headerElements = {
 };
 
 function RootStackScreen(): React.JSX.Element {
-  console.log(`=AAA= RootStackScreen.tsx ${Math.random()}`);
-
   React.useEffect(() => {
     console.log('=AAA= RootStackScreen.tsx []');
   }, []);
+
+  console.log(`=AAA= RootStackScreen.tsx ${Math.random()}`);
 
   return (
     <RootStack.Navigator initialRouteName="New">
@@ -44,8 +44,8 @@ function RootStackScreen(): React.JSX.Element {
 
       <RootStack.Group screenOptions={{...headerConfig, gestureEnabled: true}}>
         <RootStack.Screen
-          name="Home"
-          component={HomeScreen}
+          name="NestedStack"
+          component={NestedStackScreen}
           initialParams={{author: 'Gandalf'}}
           options={headerElements}
         />
@@ -54,7 +54,6 @@ function RootStackScreen(): React.JSX.Element {
       <RootStack.Group
         screenOptions={{
           presentation: 'modal',
-          headerShown: false,
           gestureEnabled: true,
         }}>
         <RootStack.Screen name="Modal" component={ModalScreen} />

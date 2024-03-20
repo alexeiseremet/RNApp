@@ -6,9 +6,9 @@ import * as React from 'react';
 import {Header} from '@react-navigation/stack';
 import type {StackHeaderProps} from '@react-navigation/stack';
 
-import RootStackScreenBanner from './RootStackScreenBanner';
+import RootStackScreenBanner from './NavStackHeaderBanner';
 
-function RootStackScreenHeader(props: StackHeaderProps) {
+function NavStackHeader(props: StackHeaderProps) {
   return (
     <>
       <Header {...props} />
@@ -17,4 +17,4 @@ function RootStackScreenHeader(props: StackHeaderProps) {
   );
 }
 
-export default React.memo(RootStackScreenHeader);
+export default React.memo(NavStackHeader);

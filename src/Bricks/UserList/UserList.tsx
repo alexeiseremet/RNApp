@@ -17,11 +17,11 @@ function UserList(): React.JSX.Element {
   const styles = stylesFn(colors);
   const {loading, response} = useFetchData();
 
-  console.log(`=AAA= UserList.tsx ${Math.random()}`);
-
   React.useEffect(() => {
     console.log('=AAA= UserList.tsx []');
   }, []);
+
+  console.log(`=AAA= UserList.tsx ${Math.random()}`);
 
   if (loading) {
     return <ActivityIndicator />;

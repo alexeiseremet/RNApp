@@ -12,11 +12,12 @@ function Typography(props): React.JSX.Element {
   const {children, style, ...rest} = props;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
-  console.log(`=AAA= Typography.tsx ${Math.random()}`);
 
   React.useEffect(() => {
     console.log('=AAA= Typography.tsx []');
   }, []);
+
+  console.log(`=AAA= Typography.tsx ${Math.random()}`);
 
   return (
     <Text style={[styles.Typography, style]} colors={colors} {...rest}>

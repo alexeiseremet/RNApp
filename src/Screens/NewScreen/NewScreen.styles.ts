@@ -9,13 +9,13 @@ const stylesFn = colors =>
     NewScreen: {
       flex: 1,
     },
-    NewScreenStatusBar: {
-      backgroundColor: colors?.background,
-    },
     NewScreenContainer: {
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
+    },
+    NewScreenStatusBar: {
+      backgroundColor: colors?.background,
     },
   });
 
