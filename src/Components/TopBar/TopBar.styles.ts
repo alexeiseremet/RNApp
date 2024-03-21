@@ -6,11 +6,11 @@ import {StyleSheet} from 'react-native';
 
 const stylesFn = colors =>
   StyleSheet.create({
-    NavStackHeaderBackground: {
+    TopBarBackground: {
       backgroundColor: colors?.notification,
       flex: 1,
     },
-    NavStackHeaderBanner: {
+    TopBarBanner: {
       color: colors?.notification,
       backgroundColor: colors?.card,
       textAlign: 'center',

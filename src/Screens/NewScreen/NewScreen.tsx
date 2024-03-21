@@ -8,7 +8,7 @@ import {useTheme as useRNTheme} from '@react-navigation/native';
 
 import withWrapper from '../../hoc/withWrapper';
 import useAppState from '../../hooks/useAppState';
-import Typography from '../../Bricks/Typography/Typography';
+import Typography from '../../Components/Typography/Typography';
 import stylesFn from './NewScreen.styles';
 
 function NewScreen(props): React.JSX.Element {
@@ -28,6 +28,7 @@ function NewScreen(props): React.JSX.Element {
       <StatusBar
         barStyle="dark-content"
         backgroundColor={styles.NewScreenStatusBar.backgroundColor}
+        translucent={true}
       />
 
       <SafeAreaView style={styles.NewScreen}>

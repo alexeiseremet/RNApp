@@ -6,10 +6,10 @@ import {StyleSheet} from 'react-native';
 
 const stylesFn = colors =>
   StyleSheet.create({
-    UserList: {
+    List: {
       flex: 1,
     },
-    UserListItem: {
+    ListItem: {
       flex: 1,
       borderColor: colors?.border,
       borderBottomWidth: StyleSheet.hairlineWidth,

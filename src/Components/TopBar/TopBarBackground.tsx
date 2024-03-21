@@ -6,9 +6,9 @@ import * as React from 'react';
 import {StatusBar, View} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import stylesFn from './NavStackHeader.styles';
+import stylesFn from './TopBar.styles';
 
-function NavStackHeaderBackground(props) {
+function TopBarBackground(props) {
   const {style, ...rest} = props;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
@@ -16,11 +16,12 @@ function NavStackHeaderBackground(props) {
     <>
       <StatusBar
         barStyle="light-content"
-        backgroundColor={styles.NavStackHeaderBackground.backgroundColor}
+        backgroundColor={styles.TopBarBackground.backgroundColor}
+        translucent={true}
       />
-      <View style={[style, styles.NavStackHeaderBackground]} {...rest} />
+      <View style={[style, styles.TopBarBackground]} {...rest} />
     </>
   );
 }
 
-export default React.memo(NavStackHeaderBackground);
+export default React.memo(TopBarBackground);

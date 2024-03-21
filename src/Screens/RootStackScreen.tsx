@@ -7,9 +7,9 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import NewScreen from './NewScreen/NewScreen';
 import ModalScreen from './ModalScreen/ModalScreen';
-import Typography from '../Bricks/Typography/Typography';
-import RootStackScreenHeader from '../Bricks/NavStackHeader/NavStackHeader';
-import RootStackScreenBackground from '../Bricks/NavStackHeader/NavStackHeaderBackground';
+import Typography from '../Components/Typography/Typography';
+import TopBar from '../Components/TopBar/TopBar';
+import TopBarBackground from '../Components/TopBar/TopBarBackground';
 import NestedStackScreen from './NestedStackScreen';
 
 const RootStack = createStackNavigator();
@@ -18,8 +18,8 @@ const headerConfig = {
   headerMode: 'screen',
   headerTitleAlign: 'center',
   headerBackTitleVisible: false,
-  header: props => <RootStackScreenHeader {...props} />,
-  headerBackground: props => <RootStackScreenBackground {...props} />,
+  header: props => <TopBar {...props} />,
+  headerBackground: props => <TopBarBackground {...props} />,
 };
 
 const headerElements = {
@@ -52,10 +52,7 @@ function RootStackScreen(): React.JSX.Element {
       </RootStack.Group>
 
       <RootStack.Group
-        screenOptions={{
-          presentation: 'modal',
-          gestureEnabled: true,
-        }}>
+        screenOptions={{presentation: 'modal', gestureEnabled: true}}>
         <RootStack.Screen name="Modal" component={ModalScreen} />
       </RootStack.Group>
     </RootStack.Navigator>

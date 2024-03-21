@@ -6,9 +6,9 @@ import * as React from 'react';
 import {Alert, Animated} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import stylesFn from './NavStackHeader.styles';
+import stylesFn from './TopBar.styles';
 
-function NavStackHeaderBanner(props) {
+function TopBarBanner(props) {
   const {current, next} = props.progress;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
@@ -26,12 +26,10 @@ function NavStackHeaderBanner(props) {
   }, []);
 
   return (
-    <Animated.Text
-      onPress={onPress}
-      style={[styles.NavStackHeaderBanner, {opacity}]}>
+    <Animated.Text onPress={onPress} style={[styles.TopBarBanner, {opacity}]}>
       About credex
     </Animated.Text>
   );
 }
 
-export default React.memo(NavStackHeaderBanner);
+export default React.memo(TopBarBanner);

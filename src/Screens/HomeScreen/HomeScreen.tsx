@@ -6,7 +6,7 @@ import * as React from 'react';
 import {View} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import UserList from '../../Bricks/UserList/UserList';
+import UserList from '../../Components/List/List';
 import stylesFn from './HomeScreen.styles';
 
 function HomeScreen(): React.JSX.Element {

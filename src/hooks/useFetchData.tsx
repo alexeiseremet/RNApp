@@ -15,9 +15,7 @@ function useFetchData() {
     setLoading(true);
 
     try {
-      const res = await fetch(
-        'https://json-placeholder.mock.beeceptor.com/users',
-      );
+      const res = await fetch('https://rickandmortyapi.com/api/episode');
       const jsonData = await res.json();
       console.log('=AAA= useFetchData.tsx C jsonData');
       setResponse(jsonData);

@@ -6,15 +6,15 @@ import * as React from 'react';
 import {Header} from '@react-navigation/stack';
 import type {StackHeaderProps} from '@react-navigation/stack';
 
-import RootStackScreenBanner from './NavStackHeaderBanner';
+import TopBarBanner from './TopBarBanner';
 
-function NavStackHeader(props: StackHeaderProps) {
+function TopBar(props: StackHeaderProps) {
   return (
     <>
       <Header {...props} />
-      <RootStackScreenBanner {...props} />
+      <TopBarBanner {...props} />
     </>
   );
 }
 
-export default React.memo(NavStackHeader);
+export default React.memo(TopBar);

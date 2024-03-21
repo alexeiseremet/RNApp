@@ -6,7 +6,7 @@ import * as React from 'react';
 import {View, Pressable} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import Typography from '../../Bricks/Typography/Typography';
+import Typography from '../../Components/Typography/Typography';
 import stylesFn from './ModalScreen.styles';
 
 function ModalScreen(props): React.JSX.Element {

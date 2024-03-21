@@ -6,7 +6,6 @@ import * as React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import HomeScreen from './HomeScreen/HomeScreen';
-import NewScreen from './NewScreen/NewScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +19,6 @@ function NestedStackScreen(): React.JSX.Element {
   return (
     <Tab.Navigator screenOptions={{headerShown: false, gestureEnabled: false}}>
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Sweet" component={HomeScreen} />
     </Tab.Navigator>
   );
 }
