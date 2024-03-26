@@ -7,6 +7,7 @@ import {Alert, Animated} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
 import stylesFn from './TopBar.styles';
+import Typography from '../Typography/Typography';
 
 function TopBarBanner(props) {
   const {current, next} = props.progress;
@@ -27,7 +28,7 @@ function TopBarBanner(props) {
 
   return (
     <Animated.Text onPress={onPress} style={[styles.TopBarBanner, {opacity}]}>
-      About credex
+      <Typography unit="Group">About credex</Typography>
     </Animated.Text>
   );
 }

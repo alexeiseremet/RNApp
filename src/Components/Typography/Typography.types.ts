@@ -2,4 +2,11 @@
  * @format
  */
 
-export type Color = 'dark' | 'light';
+export type TypographyUnit =
+  | 'Paragraph'
+  | 'Hero'
+  | 'Headline'
+  | 'Heading'
+  | 'Subhead'
+  | 'Group'
+  | 'Label';

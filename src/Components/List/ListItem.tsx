@@ -7,7 +7,7 @@ import * as React from 'react';
 import {View} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import Typography from '../Typography/Typography';
+import Link from '../Link/Link';
 import stylesFn from './List.styles';
 
 function ListItem(props): React.JSX.Element {
@@ -17,7 +17,12 @@ function ListItem(props): React.JSX.Element {
 
   return (
     <View style={styles.ListItem}>
-      <Typography>{props.data?.name}</Typography>
+      <Link
+        onPress={() => {
+          console.log(`=AAA= ListItem.tsx ${props.data?.name}`);
+        }}
+        title={props.data?.name}
+      />
     </View>
   );
 }

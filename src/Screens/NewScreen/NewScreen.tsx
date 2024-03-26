@@ -3,12 +3,13 @@
  */
 
 import * as React from 'react';
-import {StatusBar, View, SafeAreaView, Pressable} from 'react-native';
+import {StatusBar, View, SafeAreaView} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
 import withWrapper from '../../hoc/withWrapper';
 import useAppState from '../../hooks/useAppState';
 import Typography from '../../Components/Typography/Typography';
+import Link from '../../Components/Link/Link';
 import stylesFn from './NewScreen.styles';
 
 function NewScreen(props): React.JSX.Element {
@@ -34,18 +35,21 @@ function NewScreen(props): React.JSX.Element {
       <SafeAreaView style={styles.NewScreen}>
         <View style={styles.NewScreenContainer}>
           <View>
-            <Typography>Mai dureaza cateva secunde.</Typography>
-            <Typography>Multumim pentru rabdare.</Typography>
-            <Typography>___</Typography>
-            <Typography>NewScreen.tsx, {newProp}</Typography>
-            <Typography>___</Typography>
+            <Typography unit="Hero">Multumim pentru rabdare.</Typography>
+            <Typography unit="Subhead">Mai dureaza cateva secunde.</Typography>
+            <Typography unit="Info">
+              NewScreen.tsx, {newProp}, {appState}
+            </Typography>
+            <Typography unit="Paragraph">___</Typography>
 
-            <Pressable
+            <Link onPress={() => navigation.navigate('Modal')} title="Modal" />
+            <Typography />
+            <Link
               onPress={() =>
                 navigation.navigate('NestedStack', {screen: 'Home'})
-              }>
-              <Typography>{appState}</Typography>
-            </Pressable>
+              }
+              title="Tab"
+            />
           </View>
         </View>
       </SafeAreaView>

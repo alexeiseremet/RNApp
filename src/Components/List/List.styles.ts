@@ -9,11 +9,19 @@ const stylesFn = colors =>
     List: {
       flex: 1,
     },
+    ListHeader: {
+      paddingHorizontal: 25,
+      paddingTop: 25,
+    },
     ListItem: {
-      flex: 1,
       borderColor: colors?.border,
       borderBottomWidth: StyleSheet.hairlineWidth,
-      padding: 10,
+      paddingHorizontal: 25,
+      marginBottom: 10,
+    },
+    ListFooter: {
+      paddingHorizontal: 25,
+      paddingBottom: 25,
     },
   });
 

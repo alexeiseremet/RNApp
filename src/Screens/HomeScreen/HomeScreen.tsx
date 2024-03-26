@@ -6,7 +6,7 @@ import * as React from 'react';
 import {View} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import UserList from '../../Components/List/List';
+import List from '../../Components/List/List';
 import stylesFn from './HomeScreen.styles';
 
 function HomeScreen(): React.JSX.Element {
@@ -21,7 +21,9 @@ function HomeScreen(): React.JSX.Element {
 
   return (
     <View style={styles.HomeScreen}>
-      <UserList />
+      <View style={styles.HomeScreenContainer}>
+        <List />
+      </View>
     </View>
   );
 }

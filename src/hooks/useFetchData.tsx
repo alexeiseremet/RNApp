@@ -8,30 +8,24 @@ function useFetchData() {
   console.log(`=AAA= useFetchData.tsx ${Math.random()}`);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState({});
-  const [response, setResponse] = React.useState([]);
+  const [response, setResponse] = React.useState({});
 
   const fetchData = React.useCallback(async () => {
     console.log('=AAA= useFetchData.tsx B loading=true');
-    setLoading(true);
 
     try {
-      const res = await fetch('https://rickandmortyapi.com/api/episode');
+      setLoading(true);
+      const res = await fetch('https://rickandmortyapi.com/api/character');
       const jsonData = await res.json();
       console.log('=AAA= useFetchData.tsx C jsonData');
       setResponse(jsonData);
+      setLoading(false);
     } catch (e) {
       setError(e);
       console.error('Error fetching data:', e);
     }
 
     console.log('=AAA= useFetchData.tsx D');
-
-    setTimeout(() => {
-      console.log('=AAA= useFetchData.tsx F loading=false');
-      setLoading(false);
-    }, 1000);
-
-    console.log('=AAA= useFetchData.tsx E');
   }, []);
 
   React.useEffect(() => {

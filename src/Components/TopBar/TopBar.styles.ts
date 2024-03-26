@@ -15,9 +15,6 @@ const stylesFn = colors =>
       backgroundColor: colors?.card,
       textAlign: 'center',
       padding: 4,
-      fontSize: 14,
-      textTransform: 'uppercase',
-      letterSpacing: 1,
     },
   });
 

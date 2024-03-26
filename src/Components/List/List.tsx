@@ -3,16 +3,16 @@
  */
 
 import * as React from 'react';
-import {View, FlatList, ActivityIndicator, Pressable} from 'react-native';
-import {useTheme as useRNTheme, useNavigation} from '@react-navigation/native';
+import {View, FlatList, ActivityIndicator} from 'react-native';
+import {useTheme as useRNTheme} from '@react-navigation/native';
 
 import useFetchData from '../../hooks/useFetchData';
-import Typography from '../Typography/Typography';
+import ListHeader from './ListHeader';
+import ListFooter from './ListFooter';
 import ListItem from './ListItem';
 import stylesFn from './List.styles';
 
 function List(): React.JSX.Element {
-  const navigation = useNavigation();
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
   const {loading, response} = useFetchData();
@@ -34,11 +34,8 @@ function List(): React.JSX.Element {
         initialNumToRender={15}
         renderItem={({item, ...rest}) => <ListItem data={item} {...rest} />}
         keyExtractor={user => user.id}
-        ListHeaderComponent={
-          <Pressable onPress={() => navigation.navigate('Modal')}>
-            <Typography>{`There is a total of ${response?.info.count} episodes sorted by id.`}</Typography>
-          </Pressable>
-        }
+        ListHeaderComponent={<ListHeader />}
+        ListFooterComponent={<ListFooter data={response?.info} />}
       />
     </View>
   );

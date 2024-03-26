@@ -9,6 +9,10 @@ const stylesFn = () =>
     HomeScreen: {
       flex: 1,
     },
+    HomeScreenContainer: {
+      flex: 1,
+      justifyContent: 'center',
+    },
   });
 
 export default stylesFn;

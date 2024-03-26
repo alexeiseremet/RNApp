@@ -11,8 +11,8 @@ const stylesFn = colors =>
     },
     NewScreenContainer: {
       flex: 1,
-      alignItems: 'center',
       justifyContent: 'center',
+      paddingHorizontal: 25,
     },
     NewScreenStatusBar: {
       backgroundColor: colors?.background,

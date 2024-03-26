@@ -21,18 +21,16 @@ function ModalScreen(props): React.JSX.Element {
   console.log(`=AAA= ModalScreen.tsx ${Math.random()}`);
 
   return (
-    <>
-      <View style={styles.ModalScreen}>
-        <View style={styles.ModalScreenContainer}>
-          <Pressable
-            style={styles.ModalScreenBackground}
-            onPress={onPressBackground}
-          />
+    <View style={styles.ModalScreen}>
+      <View style={styles.ModalScreenContainer}>
+        <Pressable
+          style={styles.ModalScreenBackground}
+          onPress={onPressBackground}
+        />
 
-          <Typography>ModalScreen.tsx</Typography>
-        </View>
+        <Typography unit="Paragraph">ModalScreen.tsx</Typography>
       </View>
-    </>
+    </View>
   );
 }
 

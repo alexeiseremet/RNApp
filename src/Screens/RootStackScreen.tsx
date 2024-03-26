@@ -52,7 +52,11 @@ function RootStackScreen(): React.JSX.Element {
       </RootStack.Group>
 
       <RootStack.Group
-        screenOptions={{presentation: 'modal', gestureEnabled: true}}>
+        screenOptions={{
+          presentation: 'modal',
+          gestureEnabled: true,
+          headerShown: false,
+        }}>
         <RootStack.Screen name="Modal" component={ModalScreen} />
       </RootStack.Group>
     </RootStack.Navigator>

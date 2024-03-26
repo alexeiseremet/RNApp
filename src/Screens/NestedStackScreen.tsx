@@ -18,7 +18,8 @@ function NestedStackScreen(): React.JSX.Element {
 
   return (
     <Tab.Navigator screenOptions={{headerShown: false, gestureEnabled: false}}>
-      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Characters" component={HomeScreen} />
+      <Tab.Screen name="Search" component={HomeScreen} />
     </Tab.Navigator>
   );
 }

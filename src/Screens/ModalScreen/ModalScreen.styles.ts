@@ -11,8 +11,8 @@ const stylesFn = () =>
     },
     ModalScreenContainer: {
       flex: 1,
-      alignItems: 'center',
       justifyContent: 'center',
+      paddingHorizontal: 25,
     },
     ModalScreenBackground: {
       ...StyleSheet.absoluteFill,
