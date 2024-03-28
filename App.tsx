@@ -5,8 +5,11 @@
 import * as React from 'react';
 import {useColorScheme} from 'react-native';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 
 import RootStackScreen from './src/Screens/RootStackScreen';
+
+const nweQueryClient = new QueryClient();
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -31,9 +34,11 @@ function App(): React.JSX.Element {
   console.log(`=AAA= App.tsx ${Math.random()}`);
 
   return (
-    <NavigationContainer theme={NavigationContainerLightTheme}>
-      <RootStackScreen />
-    </NavigationContainer>
+    <QueryClientProvider client={nweQueryClient}>
+      <NavigationContainer theme={NavigationContainerLightTheme}>
+        <RootStackScreen />
+      </NavigationContainer>
+    </QueryClientProvider>
   );
 }
 

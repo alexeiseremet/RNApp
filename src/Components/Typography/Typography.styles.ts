@@ -50,14 +50,13 @@ const stylesFn = colors =>
     Group: {
       color: colors.text,
       fontWeight: '400',
-      fontSize: 14,
-      lineHeight: 16,
+      fontSize: 13,
+      lineHeight: 24,
       textTransform: 'uppercase',
-      letterSpacing: 1,
     },
     Label: {
       color: colors.text,
-      fontWeight: '400',
+      fontWeight: '700',
       fontSize: 13,
       lineHeight: 24,
     },

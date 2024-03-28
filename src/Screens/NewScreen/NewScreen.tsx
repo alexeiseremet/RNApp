@@ -10,6 +10,8 @@ import withWrapper from '../../hoc/withWrapper';
 import useAppState from '../../hooks/useAppState';
 import Typography from '../../Components/Typography/Typography';
 import Link from '../../Components/Link/Link';
+import Grid from '../../Components/Grid/Grid';
+import GridCol from '../../Components/Grid/GridCol';
 import stylesFn from './NewScreen.styles';
 
 function NewScreen(props): React.JSX.Element {
@@ -42,14 +44,22 @@ function NewScreen(props): React.JSX.Element {
             </Typography>
             <Typography unit="Paragraph">___</Typography>
 
-            <Link onPress={() => navigation.navigate('Modal')} title="Modal" />
-            <Typography />
-            <Link
-              onPress={() =>
-                navigation.navigate('NestedStack', {screen: 'Home'})
-              }
-              title="Tab"
-            />
+            <Grid>
+              <GridCol col={3}>
+                <Link
+                  onPress={() => navigation.navigate('Modal')}
+                  title="Modal"
+                />
+              </GridCol>
+              <GridCol col={7}>
+                <Link
+                  onPress={() =>
+                    navigation.navigate('NestedStack', {screen: 'Home'})
+                  }
+                  title="Tab"
+                />
+              </GridCol>
+            </Grid>
           </View>
         </View>
       </SafeAreaView>

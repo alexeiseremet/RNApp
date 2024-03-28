@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import {View, FlatList, ActivityIndicator} from 'react-native';
+import {View, FlatList} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
 import useFetchData from '../../hooks/useFetchData';
@@ -15,30 +15,52 @@ import stylesFn from './List.styles';
 function List(): React.JSX.Element {
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
-  const {loading, response} = useFetchData();
+  const {data, fetchNextPage, isFetching, isFetchingNextPage} = useFetchData({
+    key: 'Characters',
+    url: 'https://rickandmortyapi.com/api/character/',
+    filter: '&status=alive&gender=female',
+  });
 
-  React.useEffect(() => {
-    console.log('=AAA= List.tsx []');
-  }, []);
+  const flatData = normalizeData(data);
 
-  console.log(`=AAA= sList.tsx ${Math.random()}`);
+  const renderItem = React.useCallback(
+    ({item, ...rest}: any) => <ListItem data={item} {...rest} />,
+    [],
+  );
 
-  if (loading) {
-    return <ActivityIndicator />;
-  }
+  console.log(`=AAA= List.tsx ${Math.random()}`);
 
   return (
     <View style={styles.List}>
       <FlatList
-        data={response?.results}
-        initialNumToRender={15}
-        renderItem={({item, ...rest}) => <ListItem data={item} {...rest} />}
-        keyExtractor={user => user.id}
+        data={flatData}
+        initialNumToRender={20}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+        onEndReached={() => {
+          if (!isFetching && !isFetchingNextPage) {
+            fetchNextPage();
+          }
+        }}
+        // onRefresh={fetchNextPage}
+        // refreshing={isFetching || isFetchingNextPage}
         ListHeaderComponent={<ListHeader />}
-        ListFooterComponent={<ListFooter data={response?.info} />}
+        ListFooterComponent={
+          <ListFooter
+            count={data?.pages[0]?.info?.count}
+            loading={isFetching || isFetchingNextPage}
+          />
+        }
       />
     </View>
   );
+}
+
+export function normalizeData(data: any): Record<string, any>[] {
+  const dataResults = data?.pages.map((page: {results: []}) => page?.results);
+  const flatData = dataResults ? [].concat(...dataResults) : [];
+
+  return flatData;
 }
 
 export default React.memo(List);

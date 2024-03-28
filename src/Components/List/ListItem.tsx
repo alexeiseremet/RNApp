@@ -10,7 +10,7 @@ import {useTheme as useRNTheme} from '@react-navigation/native';
 import Link from '../Link/Link';
 import stylesFn from './List.styles';
 
-function ListItem(props): React.JSX.Element {
+function ListItem(props: {data: unknown}): React.JSX.Element {
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
   console.log(`=AAA= ListItem.tsx ${Math.random()}`);
