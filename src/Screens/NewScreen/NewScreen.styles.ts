@@ -4,7 +4,7 @@
 
 import {StyleSheet} from 'react-native';
 
-const stylesFn = colors =>
+const stylesFn = (colors: any) =>
   StyleSheet.create({
     NewScreen: {
       flex: 1,

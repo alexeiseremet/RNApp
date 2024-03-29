@@ -8,7 +8,9 @@ import {useTheme as useRNTheme} from '@react-navigation/native';
 
 import stylesFn from './TopBar.styles';
 
-function TopBarBackground(props) {
+export default React.memo(function TopBarBackground(
+  props: any,
+): React.JSX.Element {
   const {style, ...rest} = props;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
@@ -22,6 +24,4 @@ function TopBarBackground(props) {
       <View style={[style, styles.TopBarBackground]} {...rest} />
     </>
   );
-}
-
-export default React.memo(TopBarBackground);
+});

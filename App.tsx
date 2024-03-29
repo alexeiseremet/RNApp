@@ -9,7 +9,7 @@ import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 
 import RootStackScreen from './src/Screens/RootStackScreen';
 
-const nweQueryClient = new QueryClient();
+const newQueryClient = new QueryClient();
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -34,7 +34,7 @@ function App(): React.JSX.Element {
   console.log(`=AAA= App.tsx ${Math.random()}`);
 
   return (
-    <QueryClientProvider client={nweQueryClient}>
+    <QueryClientProvider client={newQueryClient}>
       <NavigationContainer theme={NavigationContainerLightTheme}>
         <RootStackScreen />
       </NavigationContainer>

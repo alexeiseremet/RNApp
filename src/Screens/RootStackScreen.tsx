@@ -3,32 +3,12 @@
  */
 
 import * as React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-
 import NewScreen from './NewScreen/NewScreen';
 import ModalScreen from './ModalScreen/ModalScreen';
-import Typography from '../Components/Typography/Typography';
-import TopBar from '../Components/TopBar/TopBar';
-import TopBarBackground from '../Components/TopBar/TopBarBackground';
 import NestedStackScreen from './NestedStackScreen';
+import {RootStack, headerConfig, headerElements} from './helpers';
 
-const RootStack = createStackNavigator();
-
-const headerConfig = {
-  headerMode: 'screen',
-  headerTitleAlign: 'center',
-  headerBackTitleVisible: false,
-  header: props => <TopBar {...props} />,
-  headerBackground: props => <TopBarBackground {...props} />,
-};
-
-const headerElements = {
-  headerLeft: props => <Typography {...props}>Left</Typography>,
-  headerRight: props => <Typography {...props}>Right</Typography>,
-  headerTitle: props => <Typography {...props}>AAA</Typography>,
-};
-
-function RootStackScreen(): React.JSX.Element {
+export default React.memo(function RootStackScreen(): React.JSX.Element {
   React.useEffect(() => {
     console.log('=AAA= RootStackScreen.tsx []');
   }, []);
@@ -46,7 +26,6 @@ function RootStackScreen(): React.JSX.Element {
         <RootStack.Screen
           name="NestedStack"
           component={NestedStackScreen}
-          initialParams={{author: 'Gandalf'}}
           options={headerElements}
         />
       </RootStack.Group>
@@ -61,6 +40,4 @@ function RootStackScreen(): React.JSX.Element {
       </RootStack.Group>
     </RootStack.Navigator>
   );
-}
-
-export default React.memo(RootStackScreen);
+});

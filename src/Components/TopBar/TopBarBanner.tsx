@@ -9,7 +9,7 @@ import {useTheme as useRNTheme} from '@react-navigation/native';
 import stylesFn from './TopBar.styles';
 import Typography from '../Typography/Typography';
 
-function TopBarBanner(props) {
+export default React.memo(function TopBarBanner(props: any): React.JSX.Element {
   const {current, next} = props.progress;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
@@ -31,6 +31,4 @@ function TopBarBanner(props) {
       <Typography unit="Group">About credex</Typography>
     </Animated.Text>
   );
-}
-
-export default React.memo(TopBarBanner);
+});

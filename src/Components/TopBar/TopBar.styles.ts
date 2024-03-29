@@ -4,7 +4,7 @@
 
 import {StyleSheet} from 'react-native';
 
-const stylesFn = colors =>
+const stylesFn = (colors: any) =>
   StyleSheet.create({
     TopBarBackground: {
       backgroundColor: colors?.notification,

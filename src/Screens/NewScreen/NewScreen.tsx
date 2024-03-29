@@ -56,7 +56,7 @@ function NewScreen(props): React.JSX.Element {
                   onPress={() =>
                     navigation.navigate('NestedStack', {screen: 'Home'})
                   }
-                  title="Tab"
+                  title="BottomTab"
                 />
               </GridCol>
             </Grid>

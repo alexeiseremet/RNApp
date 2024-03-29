@@ -3,13 +3,11 @@
  */
 
 import * as React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {BttomTab} from './helpers';
 
 import HomeScreen from './HomeScreen/HomeScreen';
 
-const Tab = createBottomTabNavigator();
-
-function NestedStackScreen(): React.JSX.Element {
+export default React.memo(function NestedStackScreen(): React.JSX.Element {
   React.useEffect(() => {
     console.log('=AAA= NestedStackScreen.tsx []');
   }, []);
@@ -17,11 +15,9 @@ function NestedStackScreen(): React.JSX.Element {
   console.log(`=AAA= NestedStackScreen.tsx ${Math.random()}`);
 
   return (
-    <Tab.Navigator screenOptions={{headerShown: false, gestureEnabled: false}}>
-      <Tab.Screen name="Characters" component={HomeScreen} />
-      <Tab.Screen name="Search" component={HomeScreen} />
-    </Tab.Navigator>
+    <BttomTab.Navigator screenOptions={{headerShown: false}}>
+      <BttomTab.Screen name="Characters" component={HomeScreen} />
+      <BttomTab.Screen name="Search" component={HomeScreen} />
+    </BttomTab.Navigator>
   );
-}
-
-export default React.memo(NestedStackScreen);
+});

@@ -6,10 +6,9 @@ import * as React from 'react';
 import {Text} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-// import type {TypographyUnit} from './Typography.types';
 import stylesFn from './Typography.styles';
 
-function Typography(props): React.JSX.Element {
+export default React.memo(function Typography(props: any): React.JSX.Element {
   const {children, style, unit, ...rest} = props;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
@@ -25,6 +24,4 @@ function Typography(props): React.JSX.Element {
       {children}
     </Text>
   );
-}
-
-export default React.memo(Typography);
+});

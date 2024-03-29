@@ -12,14 +12,15 @@ import ListFooter from './ListFooter';
 import ListItem from './ListItem';
 import stylesFn from './List.styles';
 
-function List(): React.JSX.Element {
+export default React.memo(function List(): React.JSX.Element {
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
-  const {data, fetchNextPage, isFetching, isFetchingNextPage} = useFetchData({
-    key: 'Characters',
-    url: 'https://rickandmortyapi.com/api/character/',
-    filter: '&status=alive&gender=female',
-  });
+  const {data, fetchNextPage, isFetching, hasNextPage, isFetchingNextPage} =
+    useFetchData({
+      key: 'infiniteCharacters',
+      url: 'https://rickandmortyapi.com/api/character/',
+      // filters: '&status=alive&gender=female',
+    });
 
   const flatData = normalizeData(data);
 
@@ -27,6 +28,12 @@ function List(): React.JSX.Element {
     ({item, ...rest}: any) => <ListItem data={item} {...rest} />,
     [],
   );
+
+  const onEndReachedHandler = React.useCallback(() => {
+    if (hasNextPage && (!isFetching || !isFetchingNextPage)) {
+      fetchNextPage();
+    }
+  }, [hasNextPage, fetchNextPage, isFetching, isFetchingNextPage]);
 
   console.log(`=AAA= List.tsx ${Math.random()}`);
 
@@ -37,13 +44,7 @@ function List(): React.JSX.Element {
         initialNumToRender={20}
         renderItem={renderItem}
         keyExtractor={item => item.id}
-        onEndReached={() => {
-          if (!isFetching && !isFetchingNextPage) {
-            fetchNextPage();
-          }
-        }}
-        // onRefresh={fetchNextPage}
-        // refreshing={isFetching || isFetchingNextPage}
+        onEndReached={onEndReachedHandler}
         ListHeaderComponent={<ListHeader />}
         ListFooterComponent={
           <ListFooter
@@ -54,7 +55,7 @@ function List(): React.JSX.Element {
       />
     </View>
   );
-}
+});
 
 export function normalizeData(data: any): Record<string, any>[] {
   const dataResults = data?.pages.map((page: {results: []}) => page?.results);
@@ -62,5 +63,3 @@ export function normalizeData(data: any): Record<string, any>[] {
 
   return flatData;
 }
-
-export default React.memo(List);

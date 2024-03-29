@@ -7,53 +7,55 @@ import {
   useInfiniteQuery,
 } from '@tanstack/react-query';
 
-interface FetchOpts {
-  key: string;
-  url: string;
-  page?: number;
-  filter?: string;
-}
-
 function useFetchData(opts: FetchOpts): UseInfiniteQueryResult {
-  const {key, filter, page = 1} = opts;
+  const {key, page = 1} = opts;
   console.log(`=AAA= useFetchData.tsx ${Math.random()}`);
 
   return useInfiniteQuery({
-    queryKey: [key, filter],
+    queryKey: [key],
     queryFn: ({pageParam}) => fetchFn({...opts, page: pageParam}),
     getPreviousPageParam: res => {
       const params = getParamsURL(res?.info?.prev);
-      return params.page;
+      return params.page ?? undefined;
     },
     getNextPageParam: res => {
       const params = getParamsURL(res?.info?.next);
-      return params.page;
+      return params.page ?? undefined;
     },
     initialPageParam: page,
+    staleTime: 10000,
   });
 }
 
 export default useFetchData;
 
-export async function fetchFn(opts: FetchOpts) {
-  const {url, page, filter = ''} = opts;
-  console.log('=AAA= fetchFn', `${url}?page=${page}${filter}`);
+type FetchOpts = {
+  key?: string;
+  url?: string;
+  page?: number;
+  filters?: string;
+};
+
+export async function fetchFn(opts: FetchOpts): Promise<any> {
+  const {url, page, filters = ''} = opts;
 
   try {
-    const res = await fetch(`${url}?page=${page}${filter}`);
+    await sleep(500);
+
+    console.log('=AAA= fetchFn', `${url}?page=${page}${filters}`);
+
+    const res = await fetch(`${url}?page=${page}${filters}`);
     const resJSON = await res.json();
 
-    await sleep(1000);
-
     return resJSON;
-  } catch (e) {
-    console.log(e);
+  } catch (error) {
+    throw new Error(error as string);
   }
 }
 
-export function getParamsURL(url: string): any {
+export function getParamsURL(url: string): FetchOpts {
   const regex = /[?&]([^=#]+)=([^&#]*)/g;
-  const params: any = {};
+  const params: {[index: string]: any} = {};
 
   let match;
   while ((match = regex.exec(url))) {
@@ -63,6 +65,6 @@ export function getParamsURL(url: string): any {
   return params;
 }
 
-export function sleep(delay: number): Promise<void> {
-  return new Promise<void>(resolve => setTimeout(resolve, delay));
+export function sleep(ms: number): Promise<void> {
+  return new Promise<void>(resolve => setTimeout(resolve, ms));
 }
