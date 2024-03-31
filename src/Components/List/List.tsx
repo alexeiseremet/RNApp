@@ -3,6 +3,7 @@
  */
 
 import * as React from 'react';
+import Config from "react-native-config";
 import {View, FlatList} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
@@ -18,7 +19,7 @@ export default React.memo(function List(): React.JSX.Element {
   const {data, fetchNextPage, isFetching, hasNextPage, isFetchingNextPage} =
     useFetchData({
       key: 'infiniteCharacters',
-      url: 'https://rickandmortyapi.com/api/character/',
+      url: `${Config.API_URL}/character/`,
       // filters: '&status=alive&gender=female',
     });
 

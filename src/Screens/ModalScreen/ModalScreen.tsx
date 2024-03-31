@@ -28,7 +28,7 @@ function ModalScreen(props): React.JSX.Element {
           onPress={onPressBackground}
         />
 
-        <Typography unit="Paragraph">ModalScreen.tsx</Typography>
+        <Typography role="Body">ModalScreen.tsx</Typography>
       </View>
     </View>
   );

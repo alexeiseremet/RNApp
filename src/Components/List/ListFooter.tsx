@@ -21,7 +21,7 @@ function ListFooter(props: {
 
   return (
     <View style={styles.ListFooter}>
-      <Typography unit="Info">{`${count} characters`}</Typography>
+      <Typography role="Info">{`${count} characters`}</Typography>
       {loading && <ActivityIndicator />}
     </View>
   );

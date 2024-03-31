@@ -1,0 +1,41 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Onest/Onest-VariableFont_wght.ttf",
+      "sha1": "9319394d41cc98341789048a1d3b9831375ed449"
+    },
+    {
+      "path": "src/assets/icons/arrow_back-arrow_back_symbol.svg",
+      "sha1": "8375be2595a61e18fa8e6e67c3ce40d4a0c9e91f"
+    },
+    {
+      "path": "src/assets/icons/arrow_forward-arrow_forward_symbol.svg",
+      "sha1": "61d0ec5bedb2f7247964b038195316100faecb89"
+    },
+    {
+      "path": "src/assets/icons/close-close_symbol.svg",
+      "sha1": "d24aedb4a5bb6063fd4fe568955e6016d43cc687"
+    },
+    {
+      "path": "src/assets/icons/home-home_symbol.svg",
+      "sha1": "e243d3b590be050f84e13bda20ca5b05cc8a4866"
+    },
+    {
+      "path": "src/assets/icons/menu-menu_symbol.svg",
+      "sha1": "a695a292098df9440417f823dd9cabc245e77b44"
+    },
+    {
+      "path": "src/assets/icons/refresh-refresh_symbol.svg",
+      "sha1": "f9271f145487508268f31dfd531906a50b310146"
+    },
+    {
+      "path": "src/assets/icons/search-search_symbol.svg",
+      "sha1": "05286382aec8691e2e7c58f7c7dd933106b232ce"
+    },
+    {
+      "path": "src/assets/icons/settings-settings_symbol.svg",
+      "sha1": "9d4228aa2e5abe931c1824a7edde3d0e09306e4b"
+    }
+  ]
+}

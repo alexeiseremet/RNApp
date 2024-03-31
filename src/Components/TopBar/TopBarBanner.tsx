@@ -28,7 +28,7 @@ export default React.memo(function TopBarBanner(props: any): React.JSX.Element {
 
   return (
     <Animated.Text onPress={onPress} style={[styles.TopBarBanner, {opacity}]}>
-      <Typography unit="Group">About credex</Typography>
+      <Typography role="Group">About credex</Typography>
     </Animated.Text>
   );
 });

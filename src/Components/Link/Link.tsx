@@ -24,7 +24,7 @@ function Link(props): React.JSX.Element {
     <View style={styles.Link}>
       <View style={styles.LinkInner}>
         <Pressable onPress={onPress} {...rest}>
-          <Typography unit="Link">{title}</Typography>
+          <Typography role="Link">{title}</Typography>
         </Pressable>
       </View>
     </View>

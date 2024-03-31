@@ -17,7 +17,7 @@ function ListHeader(): React.JSX.Element {
 
   return (
     <View style={styles.ListHeader}>
-      <Typography unit="Headline">Characters</Typography>
+      <Typography role="Headline">Characters</Typography>
     </View>
   );
 }

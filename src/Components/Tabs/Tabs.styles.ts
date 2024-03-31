@@ -33,6 +33,7 @@ const stylesFn = (colors: any, active?: boolean) =>
     },
     TabsTabTitle: {
       color: active ? 'white' : 'black',
+      fontFamily: 'Onest',
     },
   });
 

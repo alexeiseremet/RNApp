@@ -37,12 +37,12 @@ function NewScreen(props): React.JSX.Element {
       <SafeAreaView style={styles.NewScreen}>
         <View style={styles.NewScreenContainer}>
           <View>
-            <Typography unit="Hero">Multumim pentru rabdare.</Typography>
-            <Typography unit="Subhead">Mai dureaza cateva secunde.</Typography>
-            <Typography unit="Info">
+            <Typography role="Display">Components.</Typography>
+            <Typography role="Subtitle">Components are interactive building blocks for creating a user interface.</Typography>
+            <Typography role="Info">
               NewScreen.tsx, {newProp}, {appState}
             </Typography>
-            <Typography unit="Paragraph">___</Typography>
+            <Typography role="Body">___</Typography>
 
             <Grid>
               <GridCol col={3}>

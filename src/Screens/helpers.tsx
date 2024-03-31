@@ -25,7 +25,7 @@ export const headerConfig: StackNavigationOptions = {
 };
 
 export const headerElements: StackNavigationOptions = {
-  headerLeft: (props: any) => <Typography {...props}>+ + +</Typography>,
-  headerRight: (props: any) => <Typography {...props}>* * *</Typography>,
-  headerTitle: (props: any) => <Typography {...props}>Hello</Typography>,
+  headerLeft: (props: any) => <Typography role="Label" {...props}>abc</Typography>,
+  headerTitle: (props: any) => <Typography role="Title" {...props}>Şeremet</Typography>,
+  headerRight: (props: any) => <Typography role="Label" {...props}>def</Typography>,
 };
