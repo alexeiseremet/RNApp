@@ -3,7 +3,6 @@
  */
 
 import * as React from 'react';
-
 import {View} from 'react-native';
 
 import stylesFn from './Grid.styles';

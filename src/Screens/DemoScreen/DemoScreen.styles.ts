@@ -6,15 +6,8 @@ import {StyleSheet} from 'react-native';
 
 const stylesFn = (colors: any) =>
   StyleSheet.create({
-    NewScreen: {
+    DemoScreen: {
       flex: 1,
-    },
-    NewScreenContainer: {
-      flex: 1,
-      justifyContent: 'center',
-      paddingHorizontal: 15,
-    },
-    NewScreenStatusBar: {
       backgroundColor: colors?.background,
     },
   });

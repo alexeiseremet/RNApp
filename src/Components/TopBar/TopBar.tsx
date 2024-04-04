@@ -6,7 +6,7 @@ import * as React from 'react';
 import {Header} from '@react-navigation/stack';
 import type {StackHeaderProps} from '@react-navigation/stack';
 
-import TopBarTabs from './TopBarTabs';
+import Typography from '../Typography/Typography';
 
 export default React.memo(function TopBar(
   props: StackHeaderProps,
@@ -14,7 +14,9 @@ export default React.memo(function TopBar(
   return (
     <>
       <Header {...props} />
-      <TopBarTabs />
+      <Typography role="Title" align="center">
+        Şeremet
+      </Typography>
     </>
   );
 });

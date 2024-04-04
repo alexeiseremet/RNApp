@@ -4,20 +4,18 @@
 
 import {StyleSheet} from 'react-native';
 
-const stylesFn = () =>
+const stylesFn = (colors: any) =>
   StyleSheet.create({
-    ModalScreen: {
+    IntroScreen: {
       flex: 1,
     },
-    ModalScreenContainer: {
+    IntroScreenContainer: {
       flex: 1,
       justifyContent: 'center',
-      alignItems: 'center',
       paddingHorizontal: 15,
     },
-    ModalScreenBackground: {
-      ...StyleSheet.absoluteFill,
-      backgroundColor: 'rgba(249, 249, 249, 1)',
+    IntroScreenStatusBar: {
+      backgroundColor: colors?.background,
     },
   });
 

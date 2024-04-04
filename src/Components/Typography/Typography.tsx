@@ -9,18 +9,12 @@ import {useTheme as useRNTheme} from '@react-navigation/native';
 import stylesFn from './Typography.styles';
 
 export default React.memo(function Typography(props: any): React.JSX.Element {
-  const {children, style, role, ...rest} = props;
+  const {children, role, align, ...rest} = props;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
 
-  React.useEffect(() => {
-    console.log('=AAA= Typography.tsx []');
-  }, []);
-
-  console.log(`=AAA= Typography.tsx ${Math.random()}`);
-
   return (
-    <Text style={[styles[role], style]} {...rest}>
+    <Text style={[styles[role], styles[align]]} {...rest}>
       {children}
     </Text>
   );

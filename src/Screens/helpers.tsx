@@ -11,6 +11,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import Typography from '../Components/Typography/Typography';
 import TopBar from '../Components/TopBar/TopBar';
+import TopBarTabs from '../Components/TopBar/TopBarTabs';
 import TopBarBackground from '../Components/TopBar/TopBarBackground';
 
 export const RootStack = createStackNavigator();
@@ -25,7 +26,15 @@ export const headerConfig: StackNavigationOptions = {
 };
 
 export const headerElements: StackNavigationOptions = {
-  headerLeft: (props: any) => <Typography role="Label" {...props}>abc</Typography>,
-  headerTitle: (props: any) => <Typography role="Title" {...props}>Şeremet</Typography>,
-  headerRight: (props: any) => <Typography role="Label" {...props}>def</Typography>,
+  headerLeft: (props: any) => (
+    <Typography role="Label" {...props}>
+      abc
+    </Typography>
+  ),
+  headerTitle: (props: any) => <TopBarTabs {...props} />,
+  headerRight: (props: any) => (
+    <Typography role="Label" {...props}>
+      def
+    </Typography>
+  ),
 };

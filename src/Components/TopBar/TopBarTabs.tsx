@@ -26,7 +26,7 @@ export default React.memo(function TopBarTabs(): React.JSX.Element {
     <Tabs
       items={[
         {title: 'Alert', onPress: onPressDark},
-        {title: 'Modal', onPress: onPressLight},
+        {title: 'RN Modal', onPress: onPressLight},
       ]}
     />
   );

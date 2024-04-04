@@ -4,76 +4,82 @@
 
 import {StyleSheet} from 'react-native';
 
-const stylesFn = colors =>
+const stylesFn = (colors: any) =>
   StyleSheet.create({
     Display: {
+      fontFamily: 'Onest',
       color: colors.text,
       fontWeight: '700',
       fontSize: 44,
       lineHeight: 50,
       paddingBottom: 10,
-      fontFamily: 'Onest',
     },
     Headline: {
+      fontFamily: 'Onest',
       color: colors.text,
       fontWeight: '700',
       fontSize: 34,
       lineHeight: 40,
       paddingBottom: 10,
-      fontFamily: 'Onest',
     },
     Title: {
+      fontFamily: 'Onest',
       color: colors.text,
       fontWeight: '700',
       fontSize: 24,
       lineHeight: 30,
       paddingBottom: 5,
-      fontFamily: 'Onest',
     },
     Subtitle: {
+      fontFamily: 'Onest',
       color: colors.text,
       fontWeight: '400',
       fontSize: 20,
       lineHeight: 26,
       paddingBottom: 5,
-      fontFamily: 'Onest',
     },
     Body: {
+      fontFamily: 'Onest',
       color: colors.text,
       fontWeight: '400',
       fontSize: 16,
       lineHeight: 24,
       paddingBottom: 20,
-      fontFamily: 'Onest',
     },
     Link: {
+      fontFamily: 'Onest',
       color: colors.text,
       fontWeight: '700',
       fontSize: 16,
       lineHeight: 24,
-      fontFamily: 'Onest',
     },
     Group: {
+      fontFamily: 'Onest',
       color: colors.text,
       fontWeight: '400',
       fontSize: 13,
       lineHeight: 24,
       textTransform: 'uppercase',
-      fontFamily: 'Onest',
     },
     Label: {
+      fontFamily: 'Onest',
       color: colors.text,
       fontWeight: '700',
       fontSize: 13,
       lineHeight: 24,
-      fontFamily: 'Onest',
     },
     Info: {
+      fontFamily: 'Onest',
       color: colors.text,
       fontWeight: '400',
       fontSize: 12,
       lineHeight: 14,
-      fontFamily: 'Onest',
+    },
+    center: {
+      textAlign: 'center',
+    },
+    right: {
+      textAlign: 'right',
     },
   });
 

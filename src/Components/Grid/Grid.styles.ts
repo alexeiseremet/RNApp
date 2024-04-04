@@ -9,9 +9,8 @@ const getCols = cols => {
 
   for (let i = 1; i <= cols; i++) {
     columns[`GridCol${i}`] = {
-      flexGrow: 0,
-      flexShrink: 0,
-      flexBasis: `${i * 10}%`,
+      width: `${i * 10}%`,
+      maxWidth: `${i * 10}%`,
     };
   }
 
@@ -23,7 +22,6 @@ const GridCols = getCols(10);
 const stylesFn = () =>
   StyleSheet.create({
     Grid: {
-      flex: 0,
       flexDirection: 'row',
       flexWrap: 'wrap',
       alignContent: 'flex-start',

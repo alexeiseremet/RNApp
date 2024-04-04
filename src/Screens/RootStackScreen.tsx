@@ -3,23 +3,17 @@
  */
 
 import * as React from 'react';
-import NewScreen from './NewScreen/NewScreen';
+import IntroScreen from './IntroScreen/IntroScreen';
 import ModalScreen from './ModalScreen/ModalScreen';
 import NestedStackScreen from './NestedStackScreen';
 import {RootStack, headerConfig, headerElements} from './helpers';
 
 export default React.memo(function RootStackScreen(): React.JSX.Element {
-  React.useEffect(() => {
-    console.log('=AAA= RootStackScreen.tsx []');
-  }, []);
-
-  console.log(`=AAA= RootStackScreen.tsx ${Math.random()}`);
-
   return (
-    <RootStack.Navigator initialRouteName="New">
+    <RootStack.Navigator initialRouteName="Intro">
       <RootStack.Group
         screenOptions={{headerShown: false, gestureEnabled: false}}>
-        <RootStack.Screen name="New" component={NewScreen} />
+        <RootStack.Screen name="Intro" component={IntroScreen} />
       </RootStack.Group>
 
       <RootStack.Group screenOptions={{...headerConfig, gestureEnabled: true}}>

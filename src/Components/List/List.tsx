@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import Config from "react-native-config";
+import Config from 'react-native-config';
 import {View, FlatList} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 

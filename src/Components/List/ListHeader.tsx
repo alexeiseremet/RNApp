@@ -13,7 +13,6 @@ import stylesFn from './List.styles';
 function ListHeader(): React.JSX.Element {
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
-  console.log(`=AAA= ListHeader.tsx ${Math.random()}`);
 
   return (
     <View style={styles.ListHeader}>

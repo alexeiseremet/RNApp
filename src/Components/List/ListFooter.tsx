@@ -17,7 +17,6 @@ function ListFooter(props: {
   const {count = 0, loading} = props;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
-  console.log(`=AAA= ListFooter.tsx ${Math.random()}`);
 
   return (
     <View style={styles.ListFooter}>

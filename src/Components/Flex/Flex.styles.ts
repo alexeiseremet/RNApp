@@ -6,12 +6,17 @@ import {StyleSheet} from 'react-native';
 
 const stylesFn = () =>
   StyleSheet.create({
-    HomeScreen: {
+    Flex: {
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+    },
+    FlexFloat: {
+      flexGrow: 99,
       flex: 1,
     },
-    HomeScreenContainer: {
+    FlexEqual: {
+      flexGrow: 1,
       flex: 1,
-      justifyContent: 'flex-start',
     },
   });
 
