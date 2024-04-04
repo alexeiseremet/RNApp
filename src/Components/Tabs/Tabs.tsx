@@ -14,8 +14,6 @@ export default React.memo(function Tabs(props: any): React.JSX.Element {
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
 
-  console.log(`=AAA= Tabs.tsx ${Math.random()}`);
-
   return (
     <View style={styles.Tabs}>
       <View style={styles.TabsContainer}>

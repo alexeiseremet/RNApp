@@ -10,7 +10,7 @@ import {useTheme as useRNTheme} from '@react-navigation/native';
 import Typography from '../Typography/Typography';
 import stylesFn from './List.styles';
 
-function ListHeader(): React.JSX.Element {
+export default React.memo(function ListHeader(): React.JSX.Element {
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
 
@@ -19,6 +19,4 @@ function ListHeader(): React.JSX.Element {
       <Typography role="Headline">Characters</Typography>
     </View>
   );
-}
-
-export default React.memo(ListHeader);
+});

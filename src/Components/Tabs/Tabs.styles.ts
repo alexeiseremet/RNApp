@@ -29,9 +29,9 @@ const stylesFn = (colors: any, active?: boolean) =>
       backgroundColor: active ? colors.primary : colors.card,
     },
     TabsTabTitle: {
-      fontSize: 14,
+      fontFamily: 'Onest-Regular',
       color: active ? 'white' : 'black',
-      fontFamily: 'Onest',
+      fontSize: 14,
     },
   });
 

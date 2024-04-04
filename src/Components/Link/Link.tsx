@@ -9,16 +9,10 @@ import {useTheme as useRNTheme} from '@react-navigation/native';
 import Typography from '../Typography/Typography';
 import stylesFn from './Link.styles';
 
-function Link(props): React.JSX.Element {
+export default React.memo(function Link(props: any): React.JSX.Element {
   const {title, onPress, ...rest} = props;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
-
-  React.useEffect(() => {
-    console.log('=AAA= Link.tsx []');
-  }, []);
-
-  console.log(`=AAA= Link.tsx ${Math.random()}`);
 
   return (
     <View style={styles.Link}>
@@ -29,6 +23,4 @@ function Link(props): React.JSX.Element {
       </View>
     </View>
   );
-}
-
-export default React.memo(Link);
+});

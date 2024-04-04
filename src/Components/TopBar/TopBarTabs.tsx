@@ -16,7 +16,6 @@ export default React.memo(function TopBarTabs(): React.JSX.Element {
       'Credex strives to make the borrowing process quick, easy, and transparent for their clients.',
     );
   }, []);
-
   const onPressLight = React.useCallback(
     () => navigation.navigate('Modal'),
     [navigation],

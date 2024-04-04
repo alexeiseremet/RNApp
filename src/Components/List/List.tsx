@@ -19,8 +19,8 @@ export default React.memo(function List(): React.JSX.Element {
   const {data, fetchNextPage, isFetching, hasNextPage, isFetchingNextPage} =
     useFetchData({
       key: 'infiniteCharacters',
-      url: `${Config.API_URL}/character/`,
-      // filters: '&status=alive&gender=female',
+      url: `${Config.REACT_APP_API_URL}/character/`,
+      filters: '&status=alive&gender=female',
     });
 
   const flatData = normalizeData(data);
@@ -35,8 +35,6 @@ export default React.memo(function List(): React.JSX.Element {
       fetchNextPage();
     }
   }, [hasNextPage, fetchNextPage, isFetching, isFetchingNextPage]);
-
-  console.log(`=AAA= List.tsx ${Math.random()}`);
 
   return (
     <View style={styles.List}>

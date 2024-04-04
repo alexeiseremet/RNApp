@@ -10,7 +10,7 @@ import {useTheme as useRNTheme} from '@react-navigation/native';
 import Typography from '../Typography/Typography';
 import stylesFn from './List.styles';
 
-function ListFooter(props: {
+export default React.memo(function ListFooter(props: {
   count: number;
   loading: boolean;
 }): React.JSX.Element {
@@ -24,6 +24,4 @@ function ListFooter(props: {
       {loading && <ActivityIndicator />}
     </View>
   );
-}
-
-export default React.memo(ListFooter);
+});
