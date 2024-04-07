@@ -6,15 +6,15 @@ import * as React from 'react';
 import {BttomTab} from './helpers';
 
 import HomeScreen from './HomeScreen/HomeScreen';
-import DemoScreen from './DemoScreen/DemoScreen';
+import ExploreScreen from './ExploreScreen/ExploreScreen';
 
 export default React.memo(function NestedStackScreen(): React.JSX.Element {
   return (
     <BttomTab.Navigator
-      initialRouteName="Demo"
+      initialRouteName="Explore"
       screenOptions={{headerShown: false}}>
       <BttomTab.Screen name="Characters" component={HomeScreen} />
-      <BttomTab.Screen name="Demo" component={DemoScreen} />
+      <BttomTab.Screen name="Explore" component={ExploreScreen} />
     </BttomTab.Navigator>
   );
 });

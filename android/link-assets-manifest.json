@@ -2,72 +2,40 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/assets/fonts/Onest/static/Onest-Black.ttf",
+      "path": "src/assets/fonts/Onest/Onest-Black.ttf",
       "sha1": "eb5e7918a838d5c77e3b716e8d075b50bce31f71"
     },
     {
-      "path": "src/assets/fonts/Onest/static/Onest-Bold.ttf",
+      "path": "src/assets/fonts/Onest/Onest-Bold.ttf",
       "sha1": "215d4dec49d03d1ce20dcec7681747f09abaffbb"
     },
     {
-      "path": "src/assets/fonts/Onest/static/Onest-ExtraBold.ttf",
+      "path": "src/assets/fonts/Onest/Onest-ExtraBold.ttf",
       "sha1": "213c53bf204cca512b2915f013b2acbabe10b491"
     },
     {
-      "path": "src/assets/fonts/Onest/static/Onest-ExtraLight.ttf",
+      "path": "src/assets/fonts/Onest/Onest-ExtraLight.ttf",
       "sha1": "71c64a6c07979a114f63d849e52ae01de108cf82"
     },
     {
-      "path": "src/assets/fonts/Onest/static/Onest-Light.ttf",
+      "path": "src/assets/fonts/Onest/Onest-Light.ttf",
       "sha1": "38db1fd15eeaa700f2e8b6e42c819cd8d6ae3c6c"
     },
     {
-      "path": "src/assets/fonts/Onest/static/Onest-Medium.ttf",
+      "path": "src/assets/fonts/Onest/Onest-Medium.ttf",
       "sha1": "853cc272c53ec9299cbcc39b439d192ccf4b029f"
     },
     {
-      "path": "src/assets/fonts/Onest/static/Onest-Regular.ttf",
+      "path": "src/assets/fonts/Onest/Onest-Regular.ttf",
       "sha1": "7fd6bbad039ed1a565cb85f31679a7e4bc4fcfe3"
     },
     {
-      "path": "src/assets/fonts/Onest/static/Onest-SemiBold.ttf",
+      "path": "src/assets/fonts/Onest/Onest-SemiBold.ttf",
       "sha1": "7089eacea65b9ae18cff842885e2c28c98c31554"
     },
     {
-      "path": "src/assets/fonts/Onest/static/Onest-Thin.ttf",
+      "path": "src/assets/fonts/Onest/Onest-Thin.ttf",
       "sha1": "4c6465771bf88a37bab5e53e83af741df094e9e5"
-    },
-    {
-      "path": "src/assets/icons/arrow_back-arrow_back_symbol.svg",
-      "sha1": "8375be2595a61e18fa8e6e67c3ce40d4a0c9e91f"
-    },
-    {
-      "path": "src/assets/icons/arrow_forward-arrow_forward_symbol.svg",
-      "sha1": "61d0ec5bedb2f7247964b038195316100faecb89"
-    },
-    {
-      "path": "src/assets/icons/close-close_symbol.svg",
-      "sha1": "d24aedb4a5bb6063fd4fe568955e6016d43cc687"
-    },
-    {
-      "path": "src/assets/icons/home-home_symbol.svg",
-      "sha1": "e243d3b590be050f84e13bda20ca5b05cc8a4866"
-    },
-    {
-      "path": "src/assets/icons/menu-menu_symbol.svg",
-      "sha1": "a695a292098df9440417f823dd9cabc245e77b44"
-    },
-    {
-      "path": "src/assets/icons/refresh-refresh_symbol.svg",
-      "sha1": "f9271f145487508268f31dfd531906a50b310146"
-    },
-    {
-      "path": "src/assets/icons/search-search_symbol.svg",
-      "sha1": "05286382aec8691e2e7c58f7c7dd933106b232ce"
-    },
-    {
-      "path": "src/assets/icons/settings-settings_symbol.svg",
-      "sha1": "9d4228aa2e5abe931c1824a7edde3d0e09306e4b"
     }
   ]
 }

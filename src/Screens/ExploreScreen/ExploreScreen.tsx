@@ -11,7 +11,7 @@ import GridCol from '../../Components/Grid/GridCol';
 import Flex from '../../Components/Flex/Flex';
 import FlexCol from '../../Components/Flex/FlexCol';
 import Typography from '../../Components/Typography/Typography';
-import stylesFn from './DemoScreen.styles';
+import stylesFn from './ExploreScreen.styles';
 
 function DemoCard(props: any): React.JSX.Element {
   return (
@@ -21,18 +21,18 @@ function DemoCard(props: any): React.JSX.Element {
   );
 }
 
-export default React.memo(function DemoScreen(): React.JSX.Element {
+export default React.memo(function ExploreScreen(): React.JSX.Element {
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
 
   React.useEffect(() => {
-    console.log('=AAA= DemoScreen.tsx []');
+    console.log('=AAA= ExploreScreen.tsx []');
   }, []);
 
-  console.log(`=AAA= DemoScreen.tsx ${Math.random()}`);
+  console.log(`=AAA= ExploreScreen.tsx ${Math.random()}`);
 
   return (
-    <ScrollView style={styles.DemoScreen}>
+    <ScrollView style={styles.ExploreScreen}>
       <Typography />
       <Typography role="Group">Flex, FlexCol size=Float</Typography>
 

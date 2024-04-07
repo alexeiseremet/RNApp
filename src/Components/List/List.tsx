@@ -19,7 +19,7 @@ export default React.memo(function List(): React.JSX.Element {
   const {data, fetchNextPage, isFetching, hasNextPage, isFetchingNextPage} =
     useFetchData({
       key: 'infiniteCharacters',
-      url: `${Config.REACT_APP_API_URL}/character/`,
+      url: `${Config.API_URL}/character/`,
       filters: '&status=alive&gender=female',
     });
 

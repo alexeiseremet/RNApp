@@ -6,7 +6,7 @@ import {StyleSheet} from 'react-native';
 
 const stylesFn = (colors: any) =>
   StyleSheet.create({
-    DemoScreen: {
+    ExploreScreen: {
       flex: 1,
       backgroundColor: colors?.background,
     },

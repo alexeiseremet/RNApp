@@ -6,15 +6,15 @@ import {StyleSheet} from 'react-native';
 
 const stylesFn = (colors: any) =>
   StyleSheet.create({
-    IntroScreen: {
+    WelcomeScreen: {
       flex: 1,
     },
-    IntroScreenContainer: {
+    WelcomeScreenContainer: {
       flex: 1,
       justifyContent: 'center',
       paddingHorizontal: 15,
     },
-    IntroScreenStatusBar: {
+    WelcomeScreenStatusBar: {
       backgroundColor: colors?.background,
     },
   });

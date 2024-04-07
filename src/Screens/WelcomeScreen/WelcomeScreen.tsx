@@ -9,31 +9,31 @@ import {useTheme as useRNTheme} from '@react-navigation/native';
 import withWrapper from '../../hoc/withWrapper';
 import useAppState from '../../hooks/useAppState';
 import Typography from '../../Components/Typography/Typography';
-import stylesFn from './IntroScreen.styles';
+import stylesFn from './WelcomeScreen.styles';
 import Link from '../../Components/Link/Link';
 
-function IntroScreen(props: any): React.JSX.Element {
+function WelcomeScreen(props: any): React.JSX.Element {
   const {newProp, navigation} = props;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
   const appState = useAppState();
 
   return (
-    <SafeAreaView style={styles.IntroScreen}>
+    <SafeAreaView style={styles.WelcomeScreen}>
       <StatusBar
         barStyle="dark-content"
-        backgroundColor={styles.IntroScreenStatusBar.backgroundColor}
+        backgroundColor={styles.WelcomeScreenStatusBar.backgroundColor}
         translucent={true}
       />
 
-      <View style={styles.IntroScreenContainer}>
-        <Typography role="Display">Components.</Typography>
+      <View style={styles.WelcomeScreenContainer}>
+        <Typography role="Display">Components</Typography>
         <Typography role="Subtitle">
           Components are interactive building blocks for creating a user
           interface.
         </Typography>
         <Typography role="Info">
-          IntroScreen.tsx, {newProp}, {appState}
+          WelcomeScreen.tsx, {newProp}, {appState}
         </Typography>
         <Typography role="Body">____</Typography>
 
@@ -46,4 +46,4 @@ function IntroScreen(props: any): React.JSX.Element {
   );
 }
 
-export default React.memo(withWrapper(IntroScreen));
+export default React.memo(withWrapper(WelcomeScreen));

@@ -3,17 +3,17 @@
  */
 
 import * as React from 'react';
-import IntroScreen from './IntroScreen/IntroScreen';
+import WelcomeScreen from './WelcomeScreen/WelcomeScreen';
 import ModalScreen from './ModalScreen/ModalScreen';
 import NestedStackScreen from './NestedStackScreen';
 import {RootStack, headerConfig, headerElements} from './helpers';
 
 export default React.memo(function RootStackScreen(): React.JSX.Element {
   return (
-    <RootStack.Navigator initialRouteName="Intro">
+    <RootStack.Navigator initialRouteName="Welcome">
       <RootStack.Group
         screenOptions={{headerShown: false, gestureEnabled: false}}>
-        <RootStack.Screen name="Intro" component={IntroScreen} />
+        <RootStack.Screen name="Welcome" component={WelcomeScreen} />
       </RootStack.Group>
 
       <RootStack.Group screenOptions={{...headerConfig, gestureEnabled: true}}>
