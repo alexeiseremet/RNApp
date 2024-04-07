@@ -14,6 +14,7 @@ export default React.memo(function TopBarBackground(
   const {style, ...rest} = props;
   const {colors} = useRNTheme();
   const styles = stylesFn(colors);
+
   return (
     <>
       <StatusBar

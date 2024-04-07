@@ -11,10 +11,18 @@ import {useNavigation} from '@react-navigation/native';
 export default React.memo(function TopBarTabs(): React.JSX.Element {
   const navigation = useNavigation();
   const onPressDark = React.useCallback(() => {
-    Alert.alert(
-      'About Credex',
-      'Credex strives to make the borrowing process quick, easy, and transparent for their clients.',
-    );
+    Alert.alert('Discard changes', "Your updates won't be saved.", [
+      {
+        text: 'Cancel',
+        onPress: () => console.log('Cancel Pressed'),
+        style: 'cancel',
+      },
+      {
+        text: 'Discard',
+        onPress: () => console.log('Discard Pressed'),
+        style: 'destructive',
+      },
+    ]);
   }, []);
   const onPressLight = React.useCallback(
     () => navigation.navigate('Modal'),

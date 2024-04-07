@@ -13,6 +13,7 @@ import Typography from '../Components/Typography/Typography';
 import TopBar from '../Components/TopBar/TopBar';
 import TopBarTabs from '../Components/TopBar/TopBarTabs';
 import TopBarBackground from '../Components/TopBar/TopBarBackground';
+import Icon from '../Components/Icon/Icon';
 
 export const RootStack = createStackNavigator();
 export const BttomTab = createBottomTabNavigator();
@@ -27,14 +28,12 @@ export const headerConfig: StackNavigationOptions = {
 
 export const headerElements: StackNavigationOptions = {
   headerLeft: (props: any) => (
-    <Typography role="Label" {...props}>
-      abc
-    </Typography>
+    <Icon variant="Meta" width={24} height={24} {...props} />
   ),
   headerTitle: (props: any) => <TopBarTabs {...props} />,
   headerRight: (props: any) => (
     <Typography role="Label" {...props}>
-      def
+      Text
     </Typography>
   ),
 };
