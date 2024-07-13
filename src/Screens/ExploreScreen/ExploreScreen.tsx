@@ -6,11 +6,11 @@ import * as React from 'react';
 import {ScrollView, View} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import Grid from '../../Components/Grid/Grid';
-import GridCol from '../../Components/Grid/GridCol';
-import Flex from '../../Components/Flex/Flex';
-import FlexCol from '../../Components/Flex/FlexCol';
-import Typography from '../../Components/Typography/Typography';
+import Grid from '#/components/Grid/Grid';
+import GridCol from '#/components/Grid/GridCol';
+import Flex from '#/components/Flex/Flex';
+import FlexCol from '#/components/Flex/FlexCol';
+import Typography from '#/components/Typography/Typography';
 import stylesFn from './ExploreScreen.styles';
 
 function DemoCard(props: any): React.JSX.Element {

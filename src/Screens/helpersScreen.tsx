@@ -2,21 +2,20 @@
  * @format
  */
 
-import * as React from 'react';
 import {
   type StackNavigationOptions,
   createStackNavigator,
 } from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-import Typography from '../Components/Typography/Typography';
-import TopBar from '../Components/TopBar/TopBar';
-import TopBarTabs from '../Components/TopBar/TopBarTabs';
-import TopBarBackground from '../Components/TopBar/TopBarBackground';
-import Icon from '../Components/Icon/Icon';
+import Typography from '#/components/Typography/Typography';
+import TopBar from '#/components/TopBar/TopBar';
+import TopBarTabs from '#/components/TopBar/TopBarTabs';
+import TopBarBackground from '#/components/TopBar/TopBarBackground';
+import Icon from '#/components/Icon/Icon';
 
 export const RootStack = createStackNavigator();
-export const BttomTab = createBottomTabNavigator();
+export const BottomTab = createBottomTabNavigator();
 
 export const headerConfig: StackNavigationOptions = {
   headerMode: 'screen',

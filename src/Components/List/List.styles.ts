@@ -11,17 +11,17 @@ const stylesFn = (colors: any) =>
     },
     ListHeader: {
       paddingHorizontal: 15,
-      paddingTop: 25,
+      paddingVertical: 10,
     },
     ListItem: {
       borderColor: colors?.border,
       borderBottomWidth: StyleSheet.hairlineWidth,
       paddingHorizontal: 15,
-      marginBottom: 10,
+      marginVertical: 5,
     },
     ListFooter: {
       paddingHorizontal: 15,
-      paddingBottom: 25,
+      paddingVertical: 10,
     },
   });
 

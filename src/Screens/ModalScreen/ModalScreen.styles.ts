@@ -15,8 +15,8 @@ const stylesFn = () =>
       alignItems: 'center',
       paddingHorizontal: 15,
     },
-    ModalScreenBackground: {
-      ...StyleSheet.absoluteFill,
+    ModalScreenBackdrop: {
+      ...StyleSheet.absoluteFillObject,
       backgroundColor: 'rgba(249, 249, 249, 1)',
     },
   });

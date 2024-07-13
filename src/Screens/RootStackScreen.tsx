@@ -3,22 +3,31 @@
  */
 
 import * as React from 'react';
+
 import WelcomeScreen from './WelcomeScreen/WelcomeScreen';
 import ModalScreen from './ModalScreen/ModalScreen';
 import NestedStackScreen from './NestedStackScreen';
-import {RootStack, headerConfig, headerElements} from './helpers';
+import {RootStack, headerConfig, headerElements} from './helpersScreen';
 
 export default React.memo(function RootStackScreen(): React.JSX.Element {
   return (
-    <RootStack.Navigator initialRouteName="Welcome">
+    <RootStack.Navigator initialRouteName="welcome">
       <RootStack.Group
-        screenOptions={{headerShown: false, gestureEnabled: false}}>
-        <RootStack.Screen name="Welcome" component={WelcomeScreen} />
+        screenOptions={{headerShown: false, gestureEnabled: true}}>
+        <RootStack.Screen
+          name="welcome"
+          component={WelcomeScreen}
+          options={{title: 'Welcome'}}
+        />
       </RootStack.Group>
 
-      <RootStack.Group screenOptions={{...headerConfig, gestureEnabled: true}}>
+      <RootStack.Group
+        screenOptions={{
+          ...headerConfig,
+          gestureEnabled: true,
+        }}>
         <RootStack.Screen
-          name="NestedStack"
+          name="nested_stack"
           component={NestedStackScreen}
           options={headerElements}
         />
@@ -30,7 +39,11 @@ export default React.memo(function RootStackScreen(): React.JSX.Element {
           gestureEnabled: true,
           headerShown: false,
         }}>
-        <RootStack.Screen name="Modal" component={ModalScreen} />
+        <RootStack.Screen
+          name="modal"
+          component={ModalScreen}
+          options={{title: 'Modal'}}
+        />
       </RootStack.Group>
     </RootStack.Navigator>
   );

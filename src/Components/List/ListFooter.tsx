@@ -7,7 +7,7 @@ import * as React from 'react';
 import {View, ActivityIndicator} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import Typography from '../Typography/Typography';
+import Typography from '#/components/Typography/Typography';
 import stylesFn from './List.styles';
 
 export default React.memo(function ListFooter(props: {

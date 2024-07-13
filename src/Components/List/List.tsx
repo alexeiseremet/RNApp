@@ -7,7 +7,7 @@ import Config from 'react-native-config';
 import {View, FlatList} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import useFetchData from '../../hooks/useFetchData';
+import useFetchData from '#/hooks/useFetchData';
 import ListHeader from './ListHeader';
 import ListFooter from './ListFooter';
 import ListItem from './ListItem';

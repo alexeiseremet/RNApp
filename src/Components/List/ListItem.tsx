@@ -7,7 +7,7 @@ import * as React from 'react';
 import {View} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import Link from '../Link/Link';
+import Link from '#/components/Link/Link';
 import stylesFn from './List.styles';
 
 export default React.memo(function ListItem(props: {

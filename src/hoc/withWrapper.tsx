@@ -4,14 +4,12 @@
 
 import * as React from 'react';
 
-function withWrapper(Element) {
-  return (props): React.JSX.Element => {
+export default (function withWrapper(WrappedComponent: any) {
+  return (props: any): React.JSX.Element => {
     React.useEffect(() => {
       console.log('=AAA= withWrapper.tsx []');
     }, []);
 
-    return <Element {...props} newProp="newProp by HOC" />;
+    return <WrappedComponent {...props} newProp="newProp by HOC" />;
   };
-}
-
-export default withWrapper;
+});

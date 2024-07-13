@@ -5,7 +5,7 @@
 import * as React from 'react';
 import {View, Pressable} from 'react-native';
 
-import Typography from '../../Components/Typography/Typography';
+import Typography from '#/components/Typography/Typography';
 import stylesFn from './ModalScreen.styles';
 
 function ModalScreen(): React.JSX.Element {
@@ -15,9 +15,9 @@ function ModalScreen(): React.JSX.Element {
     <View style={styles.ModalScreen}>
       <View style={styles.ModalScreenContainer}>
         <Pressable
-          style={styles.ModalScreenBackground}
+          style={styles.ModalScreenBackdrop}
           onPress={() => {
-            console.log('=AAA= ModalScreen.tsx} onPressBackground');
+            console.log('=AAA= ModalScreen.tsx} onPressBackdrop');
           }}
         />
 

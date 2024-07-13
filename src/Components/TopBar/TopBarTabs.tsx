@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 
-import Tabs from '../Tabs/Tabs';
+import Tabs from '#/components/Tabs/Tabs';
 import {Alert} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
@@ -25,7 +25,7 @@ export default React.memo(function TopBarTabs(): React.JSX.Element {
     ]);
   }, []);
   const onPressLight = React.useCallback(
-    () => navigation.navigate('Modal'),
+    () => navigation.navigate('modal'),
     [navigation],
   );
 

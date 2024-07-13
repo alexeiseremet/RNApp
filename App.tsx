@@ -7,7 +7,7 @@ import {useColorScheme} from 'react-native';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 
-import RootStackScreen from './src/Screens/RootStackScreen';
+import RootStackScreen from './src/screens/RootStackScreen';
 
 const newQueryClient = new QueryClient();
 

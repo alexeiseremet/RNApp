@@ -6,7 +6,7 @@ import * as React from 'react';
 import {View, Pressable} from 'react-native';
 import {useTheme as useRNTheme} from '@react-navigation/native';
 
-import Typography from '../Typography/Typography';
+import Typography from '#/components/Typography/Typography';
 import stylesFn from './Link.styles';
 
 export default React.memo(function Link(props: any): React.JSX.Element {
