@@ -7,13 +7,20 @@ import {
   useInfiniteQuery,
 } from '@tanstack/react-query';
 
+type FetchOpts = {
+  url: string;
+  key: string;
+  page?: number;
+  filters?: string;
+};
+
 function useFetchData(opts: FetchOpts): UseInfiniteQueryResult {
-  const {key, page = 1} = opts;
+  const { key, page = 1 } = opts;
   console.log(`=AAA= useFetchData.tsx ${Math.random()}`);
 
   return useInfiniteQuery({
     queryKey: [key],
-    queryFn: ({pageParam}) => fetchFn({...opts, page: pageParam}),
+    queryFn: ({ pageParam }) => fetchFn({ ...opts, page: pageParam }),
     getPreviousPageParam: res => {
       const params = getParamsURL(res?.info?.prev);
       return params.page ?? undefined;
@@ -29,15 +36,9 @@ function useFetchData(opts: FetchOpts): UseInfiniteQueryResult {
 
 export default useFetchData;
 
-type FetchOpts = {
-  key?: string;
-  url?: string;
-  page?: number;
-  filters?: string;
-};
 
 export async function fetchFn(opts: FetchOpts): Promise<any> {
-  const {url, page, filters = ''} = opts;
+  const { url, page, filters = '' } = opts;
 
   try {
     await sleep(500);
@@ -55,7 +56,7 @@ export async function fetchFn(opts: FetchOpts): Promise<any> {
 
 export function getParamsURL(url: string): FetchOpts {
   const regex = /[?&]([^=#]+)=([^&#]*)/g;
-  const params: {[index: string]: any} = {};
+  const params: { [index: string]: any } = {};
 
   let match;
   while ((match = regex.exec(url))) {

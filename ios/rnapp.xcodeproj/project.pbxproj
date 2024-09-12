@@ -8,21 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* rnappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnappTests.m */; };
-		05DBB8CB86C3406FAFC72DFF /* Onest-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC760F8D133B47438A335BAA /* Onest-Black.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-rnapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-rnapp.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		4CF9A6502F8942D0B942DF10 /* Onest-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB8BF3F8F8354F19B83F5F1A /* Onest-Light.ttf */; };
-		63C25E7611D54C769DE7FA1E /* Onest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 838BA86031064FB48B0E67DA /* Onest-Bold.ttf */; };
+		34CAD3540B2D4F6BA4A5C3D9 /* Onest-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7031B8D6608343EFBFBFB1CD /* Onest-Thin.ttf */; };
+		3C5D2DD0C20D4C71A0EE0483 /* Onest-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 269534D31ED34A6D8B4D8D15 /* Onest-Light.ttf */; };
+		3DEEFEA214EF45F78A6C0A7F /* Onest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47C5378FFA49484981569957 /* Onest-Regular.ttf */; };
+		40DE4FE60CEF1328FDAFABB5 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6D635A8D0FC1C5D539EB1656 /* PrivacyInfo.xcprivacy */; };
+		4329E14BBC7E40F4801CF281 /* Onest-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B12E4650564446B9ECD572D /* Onest-ExtraLight.ttf */; };
+		5CA4C0E674364662952F314D /* Onest-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F3C2C5B55F94D16B164C529 /* Onest-SemiBold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-rnapp-rnappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnapp-rnappTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8B8A1CDC9E9343D68C950201 /* Onest-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC3148F7DAF41C59BFF1F4B /* Onest-SemiBold.ttf */; };
-		CD18B7C3F1C04E95BE4633F2 /* Onest-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A2D0A2E80124977A75AD020 /* Onest-Regular.ttf */; };
-		D3EBBCCF2154424AA993700B /* Onest-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48FCD00BF7014C9B9B074BB2 /* Onest-Thin.ttf */; };
-		E93AAC10B38F4C2CAC40F3B9 /* Onest-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2AABB6E97A4649348DD6B3D4 /* Onest-Medium.ttf */; };
-		EF883810EFFB431080C1391A /* Onest-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CC253F634474F57B6EE7447 /* Onest-ExtraBold.ttf */; };
-		F7386A2507B1470E97E38FC9 /* Onest-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38AB158794D548DB8D1DEA24 /* Onest-ExtraLight.ttf */; };
+		84963FE483C5421A99143FFE /* Onest-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6494A216B432476B8F7A84FC /* Onest-Bold.ttf */; };
+		AF1694EABCA348309F9F8F8D /* Onest-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08CAC37370D446398D629305 /* Onest-Medium.ttf */; };
+		E13ABA57E9774689A5B8E50A /* Onest-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 387EF331F0F04391AE14C583 /* Onest-Black.ttf */; };
+		FE86DF97CF764E81B96EE348 /* Onest-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A98B410D78A4EC8B90FCE01 /* Onest-ExtraBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,29 +40,31 @@
 		00E356EE1AD99517003FC87E /* rnappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rnappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* rnappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rnappTests.m; sourceTree = "<group>"; };
+		08CAC37370D446398D629305 /* Onest-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Medium.ttf"; path = "../src/assets/fonts/Onest/Onest-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* rnapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rnapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rnapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = rnapp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = rnapp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rnapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnapp/main.m; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = rnapp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnapp-rnappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnapp-rnappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A2D0A2E80124977A75AD020 /* Onest-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Regular.ttf"; path = "../src/assets/fonts/Onest/Onest-Regular.ttf"; sourceTree = "<group>"; };
-		2AABB6E97A4649348DD6B3D4 /* Onest-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Medium.ttf"; path = "../src/assets/fonts/Onest/Onest-Medium.ttf"; sourceTree = "<group>"; };
-		38AB158794D548DB8D1DEA24 /* Onest-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-ExtraLight.ttf"; path = "../src/assets/fonts/Onest/Onest-ExtraLight.ttf"; sourceTree = "<group>"; };
+		269534D31ED34A6D8B4D8D15 /* Onest-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Light.ttf"; path = "../src/assets/fonts/Onest/Onest-Light.ttf"; sourceTree = "<group>"; };
+		387EF331F0F04391AE14C583 /* Onest-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Black.ttf"; path = "../src/assets/fonts/Onest/Onest-Black.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-rnapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnapp.debug.xcconfig"; path = "Target Support Files/Pods-rnapp/Pods-rnapp.debug.xcconfig"; sourceTree = "<group>"; };
-		48FCD00BF7014C9B9B074BB2 /* Onest-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Thin.ttf"; path = "../src/assets/fonts/Onest/Onest-Thin.ttf"; sourceTree = "<group>"; };
+		47C5378FFA49484981569957 /* Onest-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Regular.ttf"; path = "../src/assets/fonts/Onest/Onest-Regular.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-rnapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnapp.release.xcconfig"; path = "Target Support Files/Pods-rnapp/Pods-rnapp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-rnapp-rnappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnapp-rnappTests.debug.xcconfig"; path = "Target Support Files/Pods-rnapp-rnappTests/Pods-rnapp-rnappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-rnapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CC253F634474F57B6EE7447 /* Onest-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-ExtraBold.ttf"; path = "../src/assets/fonts/Onest/Onest-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5F3C2C5B55F94D16B164C529 /* Onest-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-SemiBold.ttf"; path = "../src/assets/fonts/Onest/Onest-SemiBold.ttf"; sourceTree = "<group>"; };
+		6494A216B432476B8F7A84FC /* Onest-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Bold.ttf"; path = "../src/assets/fonts/Onest/Onest-Bold.ttf"; sourceTree = "<group>"; };
+		6D635A8D0FC1C5D539EB1656 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = rnapp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		7031B8D6608343EFBFBFB1CD /* Onest-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Thin.ttf"; path = "../src/assets/fonts/Onest/Onest-Thin.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rnapp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		838BA86031064FB48B0E67DA /* Onest-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Bold.ttf"; path = "../src/assets/fonts/Onest/Onest-Bold.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rnapp-rnappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnapp-rnappTests.release.xcconfig"; path = "Target Support Files/Pods-rnapp-rnappTests/Pods-rnapp-rnappTests.release.xcconfig"; sourceTree = "<group>"; };
-		AC760F8D133B47438A335BAA /* Onest-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Black.ttf"; path = "../src/assets/fonts/Onest/Onest-Black.ttf"; sourceTree = "<group>"; };
-		EB8BF3F8F8354F19B83F5F1A /* Onest-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-Light.ttf"; path = "../src/assets/fonts/Onest/Onest-Light.ttf"; sourceTree = "<group>"; };
+		8A98B410D78A4EC8B90FCE01 /* Onest-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-ExtraBold.ttf"; path = "../src/assets/fonts/Onest/Onest-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8B12E4650564446B9ECD572D /* Onest-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-ExtraLight.ttf"; path = "../src/assets/fonts/Onest/Onest-ExtraLight.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FAC3148F7DAF41C59BFF1F4B /* Onest-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Onest-SemiBold.ttf"; path = "../src/assets/fonts/Onest/Onest-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				6D635A8D0FC1C5D539EB1656 /* PrivacyInfo.xcprivacy */,
 			);
 			name = rnapp;
 			sourceTree = "<group>";
@@ -122,6 +127,23 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnapp-rnappTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50B69025011E47239C335363 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				387EF331F0F04391AE14C583 /* Onest-Black.ttf */,
+				6494A216B432476B8F7A84FC /* Onest-Bold.ttf */,
+				8A98B410D78A4EC8B90FCE01 /* Onest-ExtraBold.ttf */,
+				8B12E4650564446B9ECD572D /* Onest-ExtraLight.ttf */,
+				269534D31ED34A6D8B4D8D15 /* Onest-Light.ttf */,
+				08CAC37370D446398D629305 /* Onest-Medium.ttf */,
+				47C5378FFA49484981569957 /* Onest-Regular.ttf */,
+				5F3C2C5B55F94D16B164C529 /* Onest-SemiBold.ttf */,
+				7031B8D6608343EFBFBFB1CD /* Onest-Thin.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -140,7 +162,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				C990A632B8B547079EA8220E /* Resources */,
+				50B69025011E47239C335363 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -165,22 +187,6 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-rnapp-rnappTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		C990A632B8B547079EA8220E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AC760F8D133B47438A335BAA /* Onest-Black.ttf */,
-				838BA86031064FB48B0E67DA /* Onest-Bold.ttf */,
-				6CC253F634474F57B6EE7447 /* Onest-ExtraBold.ttf */,
-				38AB158794D548DB8D1DEA24 /* Onest-ExtraLight.ttf */,
-				EB8BF3F8F8354F19B83F5F1A /* Onest-Light.ttf */,
-				2AABB6E97A4649348DD6B3D4 /* Onest-Medium.ttf */,
-				1A2D0A2E80124977A75AD020 /* Onest-Regular.ttf */,
-				FAC3148F7DAF41C59BFF1F4B /* Onest-SemiBold.ttf */,
-				48FCD00BF7014C9B9B074BB2 /* Onest-Thin.ttf */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +240,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -279,15 +284,16 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				05DBB8CB86C3406FAFC72DFF /* Onest-Black.ttf in Resources */,
-				63C25E7611D54C769DE7FA1E /* Onest-Bold.ttf in Resources */,
-				EF883810EFFB431080C1391A /* Onest-ExtraBold.ttf in Resources */,
-				F7386A2507B1470E97E38FC9 /* Onest-ExtraLight.ttf in Resources */,
-				4CF9A6502F8942D0B942DF10 /* Onest-Light.ttf in Resources */,
-				E93AAC10B38F4C2CAC40F3B9 /* Onest-Medium.ttf in Resources */,
-				CD18B7C3F1C04E95BE4633F2 /* Onest-Regular.ttf in Resources */,
-				8B8A1CDC9E9343D68C950201 /* Onest-SemiBold.ttf in Resources */,
-				D3EBBCCF2154424AA993700B /* Onest-Thin.ttf in Resources */,
+				40DE4FE60CEF1328FDAFABB5 /* PrivacyInfo.xcprivacy in Resources */,
+				E13ABA57E9774689A5B8E50A /* Onest-Black.ttf in Resources */,
+				84963FE483C5421A99143FFE /* Onest-Bold.ttf in Resources */,
+				FE86DF97CF764E81B96EE348 /* Onest-ExtraBold.ttf in Resources */,
+				4329E14BBC7E40F4801CF281 /* Onest-ExtraLight.ttf in Resources */,
+				3C5D2DD0C20D4C71A0EE0483 /* Onest-Light.ttf in Resources */,
+				AF1694EABCA348309F9F8F8D /* Onest-Medium.ttf in Resources */,
+				3DEEFEA214EF45F78A6C0A7F /* Onest-Regular.ttf in Resources */,
+				5CA4C0E674364662952F314D /* Onest-SemiBold.ttf in Resources */,
+				34CAD3540B2D4F6BA4A5C3D9 /* Onest-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
 		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -509,17 +515,11 @@
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-rnapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4376M389D;
+				DEVELOPMENT_TEAM = 4NLYH95Y7S;
 				ENABLE_BITCODE = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = rnapp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = rnapp;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,9 +530,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.rnapp.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rnapp;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -544,16 +543,10 @@
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-rnapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J4376M389D;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				DEVELOPMENT_TEAM = 4NLYH95Y7S;
 				INFOPLIST_FILE = rnapp/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = rnapp;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -564,9 +557,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.rnapp.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rnapp;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -576,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -603,10 +596,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -623,6 +616,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -634,17 +629,21 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "$(inherited)  ";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				USE_HERMES = true;
 			};
 			name = Debug;
@@ -653,6 +652,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -680,10 +680,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -693,6 +693,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -703,15 +705,18 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_CFLAGS = "$(inherited)  ";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

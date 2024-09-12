@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import {AppState} from 'react-native';
+import { AppState } from 'react-native';
 
 function useAppState() {
   const [appStateInfo, setAppStateInfo] = React.useState(AppState.currentState);
