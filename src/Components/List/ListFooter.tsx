@@ -4,8 +4,8 @@
 
 import * as React from 'react';
 
-import {View, ActivityIndicator} from 'react-native';
-import {useTheme as useRNTheme} from '@react-navigation/native';
+import { View, ActivityIndicator } from 'react-native';
+import { useTheme as useRNTheme } from '@react-navigation/native';
 
 import Typography from '#/components/Typography/Typography';
 import stylesFn from './List.styles';
@@ -14,8 +14,8 @@ export default React.memo(function ListFooter(props: {
   count: number;
   loading: boolean;
 }): React.JSX.Element {
-  const {count = 0, loading} = props;
-  const {colors} = useRNTheme();
+  const { count = 0, loading } = props;
+  const { colors } = useRNTheme();
   const styles = stylesFn(colors);
 
   return (

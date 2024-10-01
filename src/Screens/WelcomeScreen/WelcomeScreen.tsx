@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import {StatusBar, View, SafeAreaView} from 'react-native';
-import {useTheme as useRNTheme} from '@react-navigation/native';
+import { StatusBar, View, SafeAreaView } from 'react-native';
+import { useTheme as useRNTheme } from '@react-navigation/native';
 
 import withWrapper from '#/hoc/withWrapper';
 import useAppState from '#/hooks/useAppState';
@@ -14,8 +14,8 @@ import Sheet from '#/components/Sheet/Sheet';
 import stylesFn from './WelcomeScreen.styles';
 
 function WelcomeScreen(props: any): React.JSX.Element {
-  const {newProp, navigation} = props;
-  const {colors} = useRNTheme();
+  const { newProp, navigation } = props;
+  const { colors } = useRNTheme();
   const styles = stylesFn(colors);
   const appState = useAppState();
 
@@ -40,11 +40,11 @@ function WelcomeScreen(props: any): React.JSX.Element {
 
         <Link
           title="Get started"
-          onPress={() => navigation.navigate('nested_stack', {screen: 'home'})}
+          onPress={() => navigation.navigate('nested_stack', { screen: 'home' })}
         />
       </View>
 
-      <Sheet params={{height: 0.5}}>
+      <Sheet params={{ height: 0.5 }}>
         <Typography role="Subtitle">
           Components are interactive building blocks for creating a user
           interface.

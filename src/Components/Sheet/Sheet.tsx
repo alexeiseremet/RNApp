@@ -3,19 +3,19 @@
  */
 
 import * as React from 'react';
-import {View, ScrollView} from 'react-native';
+import { View, ScrollView } from 'react-native';
 import Animated, {
   FadeIn,
   FadeOut,
   SlideInDown,
   SlideOutDown,
 } from 'react-native-reanimated';
-import {GestureDetector} from 'react-native-gesture-handler';
+import { GestureDetector } from 'react-native-gesture-handler';
 import stylesFn from './Sheet.styles';
 import useHookSheet from './hookSheet';
 
 export default React.memo(function Sheet(props: any): React.JSX.Element | null {
-  const {children, params} = props;
+  const { children, params } = props;
   const styles = stylesFn();
   const {
     animatedSheetContainerStyles,
@@ -42,8 +42,8 @@ export default React.memo(function Sheet(props: any): React.JSX.Element | null {
       <GestureDetector gesture={newPanGesture}>
         <Animated.View
           style={[styles.SheetContainer, animatedSheetContainerStyles]}
-          // entering={SlideInDown}
-          // exiting={SlideOutDown}>
+        // entering={SlideInDown}
+        // exiting={SlideOutDown}>
         >
           <View style={styles.SheetContainerInner}>
             {/* <GestureDetector gesture={headerGesture}> */}

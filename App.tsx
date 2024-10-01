@@ -3,9 +3,9 @@
  */
 
 import * as React from 'react';
-import {useColorScheme} from 'react-native';
-import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
-import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import { useColorScheme } from 'react-native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import RootStackScreen from './src/screens/RootStackScreen';
 

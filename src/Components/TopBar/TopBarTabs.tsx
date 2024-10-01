@@ -5,8 +5,8 @@
 import * as React from 'react';
 
 import Tabs from '#/components/Tabs/Tabs';
-import {Alert} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import { Alert } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default React.memo(function TopBarTabs(): React.JSX.Element {
   const navigation = useNavigation();
@@ -32,8 +32,8 @@ export default React.memo(function TopBarTabs(): React.JSX.Element {
   return (
     <Tabs
       items={[
-        {title: 'Alert', onPress: onPressDark},
-        {title: 'RN Modal', onPress: onPressLight},
+        { title: 'Alert', onPress: onPressDark },
+        { title: 'RN Modal', onPress: onPressLight },
       ]}
     />
   );

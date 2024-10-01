@@ -7,17 +7,17 @@ import * as React from 'react';
 import WelcomeScreen from './WelcomeScreen/WelcomeScreen';
 import ModalScreen from './ModalScreen/ModalScreen';
 import NestedStackScreen from './NestedStackScreen';
-import {RootStack, headerConfig, headerElements} from './helpersScreen';
+import { RootStack, headerConfig, headerElements } from './helpersScreen';
 
 export default React.memo(function RootStackScreen(): React.JSX.Element {
   return (
     <RootStack.Navigator initialRouteName="welcome">
       <RootStack.Group
-        screenOptions={{headerShown: false, gestureEnabled: true}}>
+        screenOptions={{ headerShown: false, gestureEnabled: true }}>
         <RootStack.Screen
           name="welcome"
           component={WelcomeScreen}
-          options={{title: 'Welcome'}}
+          options={{ title: 'Welcome' }}
         />
       </RootStack.Group>
 
@@ -42,7 +42,7 @@ export default React.memo(function RootStackScreen(): React.JSX.Element {
         <RootStack.Screen
           name="modal"
           component={ModalScreen}
-          options={{title: 'Modal'}}
+          options={{ title: 'Modal' }}
         />
       </RootStack.Group>
     </RootStack.Navigator>

@@ -3,16 +3,16 @@
  */
 
 import * as React from 'react';
-import {StatusBar, View} from 'react-native';
-import {useTheme as useRNTheme} from '@react-navigation/native';
+import { StatusBar, View } from 'react-native';
+import { useTheme as useRNTheme } from '@react-navigation/native';
 
 import stylesFn from './TopBar.styles';
 
 export default React.memo(function TopBarBackground(
   props: any,
 ): React.JSX.Element {
-  const {style, ...rest} = props;
-  const {colors} = useRNTheme();
+  const { style, ...rest } = props;
+  const { colors } = useRNTheme();
   const styles = stylesFn(colors);
 
   return (

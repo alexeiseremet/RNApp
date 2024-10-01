@@ -6,7 +6,7 @@ import {
   type StackNavigationOptions,
   createStackNavigator,
 } from '@react-navigation/stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Typography from '#/components/Typography/Typography';
 import TopBar from '#/components/TopBar/TopBar';

@@ -3,8 +3,8 @@
  */
 
 import * as React from 'react';
-import {ScrollView, View} from 'react-native';
-import {useTheme as useRNTheme} from '@react-navigation/native';
+import { ScrollView, View } from 'react-native';
+import { useTheme as useRNTheme } from '@react-navigation/native';
 
 import Grid from '#/components/Grid/Grid';
 import GridCol from '#/components/Grid/GridCol';
@@ -22,7 +22,7 @@ function DemoCard(props: any): React.JSX.Element {
 }
 
 export default React.memo(function ExploreScreen(): React.JSX.Element {
-  const {colors} = useRNTheme();
+  const { colors } = useRNTheme();
   const styles = stylesFn(colors);
 
   React.useEffect(() => {
@@ -40,25 +40,25 @@ export default React.memo(function ExploreScreen(): React.JSX.Element {
         <FlexCol>
           <DemoCard
             label="React Native."
-            style={{width: 64, backgroundColor: 'lightblue'}}
+            style={{ width: 64, backgroundColor: 'lightblue' }}
           />
         </FlexCol>
         <FlexCol size="Float">
           <DemoCard
             label="Written in JavaScript — rendered with native code."
-            style={{backgroundColor: 'khaki'}}
+            style={{ backgroundColor: 'khaki' }}
           />
         </FlexCol>
         <FlexCol>
           <DemoCard
             label="Learn once, write anywhere."
-            style={{width: 84, backgroundColor: 'yellow'}}
+            style={{ width: 84, backgroundColor: 'yellow' }}
           />
         </FlexCol>
         <FlexCol>
           <DemoCard
             label="FlexCol size=Float."
-            style={{width: 84, backgroundColor: 'lightpink'}}
+            style={{ width: 84, backgroundColor: 'lightpink' }}
           />
         </FlexCol>
       </Flex>
@@ -70,25 +70,25 @@ export default React.memo(function ExploreScreen(): React.JSX.Element {
         <FlexCol size="Equal">
           <DemoCard
             label="React Native."
-            style={{backgroundColor: 'lightblue'}}
+            style={{ backgroundColor: 'lightblue' }}
           />
         </FlexCol>
         <FlexCol size="Equal">
           <DemoCard
             label="Written in JavaScript — rendered with native code."
-            style={{backgroundColor: 'khaki'}}
+            style={{ backgroundColor: 'khaki' }}
           />
         </FlexCol>
         <FlexCol size="Equal">
           <DemoCard
             label="Learn once, write anywhere."
-            style={{backgroundColor: 'yellow'}}
+            style={{ backgroundColor: 'yellow' }}
           />
         </FlexCol>
         <FlexCol size="Equal">
           <DemoCard
             label="FlexCol size=Equal."
-            style={{backgroundColor: 'lightpink'}}
+            style={{ backgroundColor: 'lightpink' }}
           />
         </FlexCol>
       </Flex>
@@ -100,25 +100,25 @@ export default React.memo(function ExploreScreen(): React.JSX.Element {
         <GridCol col={4}>
           <DemoCard
             label="React Native."
-            style={{backgroundColor: 'lightblue'}}
+            style={{ backgroundColor: 'lightblue' }}
           />
         </GridCol>
         <GridCol col={6}>
           <DemoCard
             label="Written in JavaScript — rendered with native code."
-            style={{backgroundColor: 'khaki'}}
+            style={{ backgroundColor: 'khaki' }}
           />
         </GridCol>
         <GridCol col={6}>
           <DemoCard
             label="Learn once, write anywhere."
-            style={{backgroundColor: 'yellow'}}
+            style={{ backgroundColor: 'yellow' }}
           />
         </GridCol>
         <GridCol col={4}>
           <DemoCard
             label="GridCol col=N."
-            style={{backgroundColor: 'lightpink'}}
+            style={{ backgroundColor: 'lightpink' }}
           />
         </GridCol>
       </Grid>

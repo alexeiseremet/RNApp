@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import {View, Pressable} from 'react-native';
+import { View, Pressable } from 'react-native';
 
 import Typography from '#/components/Typography/Typography';
 import stylesFn from './ModalScreen.styles';

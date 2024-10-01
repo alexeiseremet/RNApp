@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react';
-import {useWindowDimensions} from 'react-native';
+import { useWindowDimensions } from 'react-native';
 import {
   useAnimatedStyle,
   useSharedValue,
@@ -12,15 +12,15 @@ import {
   runOnJS,
   runOnUI,
 } from 'react-native-reanimated';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {Gesture} from 'react-native-gesture-handler';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Gesture } from 'react-native-gesture-handler';
 
 // TRANSLATE_Y: withTiming(windowHeight * (1 - sheetHeight) + insets.top),
 // HEIGHT: withTiming(windowHeight * sheetHeight - insets.top),
 
 export default function useHookSheet(params?: any) {
   const [isOpen, setOpen] = React.useState(true);
-  const {height: windowHeight} = useWindowDimensions();
+  const { height: windowHeight } = useWindowDimensions();
   const insets = useSafeAreaInsets();
   const INIT_OFFSET_Y = windowHeight * (1 - params.height);
   const INIT_HEIGHT = windowHeight * params.height;
@@ -63,7 +63,7 @@ export default function useHookSheet(params?: any) {
   const animatedSheetContainerStyles = useAnimatedStyle(() => {
     return {
       height: context.value.HEIGHT,
-      transform: [{translateY: withSpring(context.value.OFFSET_Y)}],
+      transform: [{ translateY: withSpring(context.value.OFFSET_Y) }],
     };
   });
 

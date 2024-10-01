@@ -2,7 +2,7 @@
  * @format
  */
 
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const stylesFn = (colors: any, active?: boolean) =>
   StyleSheet.create({
