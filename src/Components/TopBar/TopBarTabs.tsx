@@ -3,10 +3,10 @@
  */
 
 import * as React from 'react';
-
-import Tabs from '#/components/Tabs/Tabs';
 import { Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+
+import Tabs from '#/components/Tabs/Tabs';
 
 export default React.memo(function TopBarTabs(): React.JSX.Element {
   const navigation = useNavigation();

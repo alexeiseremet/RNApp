@@ -5,10 +5,12 @@
 import * as React from 'react';
 import { View } from 'react-native';
 import { useTheme as useRNTheme } from '@react-navigation/native';
-import IconMeta from './IconMeta';
+import Back from './IconBack';
+import Grill from './IconGrill';
+import Home from './IconHome';
 
-const variants = {
-  Meta: IconMeta,
+const variants: Record<string, any> = {
+  Back, Grill, Home
 };
 
 export default React.memo(function Icon(props: any): React.JSX.Element {
@@ -18,7 +20,7 @@ export default React.memo(function Icon(props: any): React.JSX.Element {
 
   return (
     <View style={{ width, height }} {...rest}>
-      <IconSVG color={color} />
+      <IconSVG fill={color} />
     </View>
   );
 });
