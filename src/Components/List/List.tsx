@@ -20,7 +20,7 @@ export default React.memo(function List(): React.JSX.Element {
     useFetchData({
       key: 'infiniteCharacters',
       url: `${BuildConfig.API_URL}/character/`,
-      filters: '&status=alive&gender=female',
+      filters: '&status=alive',
     });
 
   const flatData = normalizeData(data);
@@ -59,6 +59,8 @@ export default React.memo(function List(): React.JSX.Element {
 export function normalizeData(data: any): Record<string, any>[] {
   const dataResults = data?.pages.map((page: { results: [] }) => page?.results);
   const flatData = dataResults ? [].concat(...dataResults) : [];
+
+  console.log(111, flatData)
 
   return flatData;
 }
