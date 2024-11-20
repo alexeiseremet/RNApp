@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "rnapp.app"
-               BlueprintName = "rnapp"
-               ReferencedContainer = "container:rnapp.xcodeproj">
+               BuildableName = "RNApp.app"
+               BlueprintName = "RNApp"
+               ReferencedContainer = "container:RNApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "rnappTests.xctest"
-               BlueprintName = "rnappTests"
-               ReferencedContainer = "container:rnapp.xcodeproj">
+               BuildableName = "RNAppTests.xctest"
+               BlueprintName = "RNAppTests"
+               ReferencedContainer = "container:RNApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "rnapp.app"
-            BlueprintName = "rnapp"
-            ReferencedContainer = "container:rnapp.xcodeproj">
+            BuildableName = "RNApp.app"
+            BlueprintName = "RNApp"
+            ReferencedContainer = "container:RNApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "rnapp.app"
-            BlueprintName = "rnapp"
-            ReferencedContainer = "container:rnapp.xcodeproj">
+            BuildableName = "RNApp.app"
+            BlueprintName = "RNApp"
+            ReferencedContainer = "container:RNApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
