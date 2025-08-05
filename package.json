@@ -1,6 +1,6 @@
 {
-  "name": "RNApp",
-  "version": "78.1.0",
+  "name": "rnappx",
+  "version": "79.2.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
