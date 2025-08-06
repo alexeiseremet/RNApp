@@ -1,0 +1,40 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+# Example: bundle exec fastlane ios release beta
+platform :ios do
+  desc "Run a dynamic iOS lane"
+  lane :release do |options|
+    ios_path = File.expand_path("ios", __dir__)
+    lane_name = options[:lane] || "beta"
+
+    Dir.chdir("../ios") do
+      sh("bundle exec fastlane #{lane_name}")
+    end
+  end
+end
+
+# Example: bundle exec fastlane android release beta
+platform :android do
+  desc "Run a dynamic Android lane"
+  lane :release do |options|
+    android_path = File.expand_path("android", __dir__)
+    lane_name = options[:lane] || "beta"
+    
+    Dir.chdir("../android") do
+      sh("bundle exec fastlane #{lane_name}")
+    end
+  end
+end
