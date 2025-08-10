@@ -40,7 +40,7 @@ function WelcomeScreen(props: any): React.JSX.Element {
 
         <Link
           title="Get started"
-          onPress={() => navigation.navigate('nested_stack', { screen: 'home' })}
+          onPress={() => navigation.navigate('nested_stack', { screen: 'explore' })}
         />
       </View>
 
@@ -48,20 +48,6 @@ function WelcomeScreen(props: any): React.JSX.Element {
         <Typography role="Subtitle">
           Components are interactive building blocks for creating a user
           interface.
-        </Typography>
-        <Typography role="Body">
-          X coordinate of the current position of the pointer (finger or a
-          leading pointer when there are multiple fingers placed) relative to
-          the window. The value is expressed in point units. It is recommended
-          to use it instead of x in cases when the original view can be
-          transformed as an effect of the gesture.{' '}
-        </Typography>
-        <Typography role="Body">
-          X coordinate of the current position of the pointer (finger or a
-          leading pointer when there are multiple fingers placed) relative to
-          the window. The value is expressed in point units. It is recommended
-          to use it instead of x in cases when the original view can be
-          transformed as an effect of the gesture.{' '}
         </Typography>
         <Typography role="Body">
           X coordinate of the current position of the pointer (finger or a

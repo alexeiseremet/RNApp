@@ -17,7 +17,7 @@ const icons: Record<string, string> = {
 export default React.memo(function NestedStackScreen(): React.JSX.Element {
   return (
     <BottomTab.Navigator
-      initialRouteName="explore"
+      initialRouteName="characters"
       screenOptions={({ route }) => ({
         headerShown: false,
         tabBarLabelPosition: 'beside-icon',

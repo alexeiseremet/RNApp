@@ -34,7 +34,7 @@ export default React.memo(function Sheet(props: any): React.JSX.Element | null {
       {/* <GestureDetector gesture={backdropGesture}> */}
       <Animated.View
         style={[styles.SheetBackdrop]}
-        entering={FadeIn}
+        // entering={FadeIn} // !!! this generate error in this release
         exiting={FadeOut}
       />
       {/* </GestureDetector> */}
